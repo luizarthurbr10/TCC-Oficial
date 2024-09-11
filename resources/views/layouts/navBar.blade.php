@@ -1,51 +1,59 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="{{ url('/') }}">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="login">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="register">Cadastrar-se</a>
-                    </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-            </form>
-        </div>
-    </div>
-</nav>
+<body>
+    <div id="faixa"></div>
+    <section class="cabecalho1">
+        <nav id="nav1" class="container text-center p-1 w-auto">
+            <div class="row">
+                <div class="col mt-3">
+                    <a href="">
+                        <img src="assets/img/logo.png" width="150px" alt="">
+                    </a>
+                </div>
+                <div class="col-4 p-4 mt-3">
+                    <form id="barraPesquisa" class="d-flex" role="search">
+                        <input id="pesquisar" class="form-control me-2" type="search"
+                            placeholder="O que você está procurando?" aria-label="Search">
+                        <button class="btn btn-outline " type="submit">
+                            <img src="assets/img/icons/lupa.png" width="20px" alt="">
+                        </button>
+                    </form>
+                </div>
+                <div class="col-5 p-3 mt-3 d-flex justify-content-around">
+                    <a href="" id="grupoLinks" class="link-underline-light link-dark p-3">Home</a>
+                    <a href="" id="grupoLinks" class="link-underline-light link-dark p-3">Catálogo</a>
+                    <a href="" id="grupoLinks" class="link-underline-light link-dark p-3">Entre ou Cadastre-se</a>
+                </div>
+                <div class="col p-3 mt-3">
+                    <a href="">
+                        <img src="assets/img/icons/carrinho-de-compras.png" width="50px" alt="">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </section>
 
-<div>
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="btn btn-secondary btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown link
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-    </ul>
-</div>
+    <section class="cabecalho2">
+        <nav id="nav2" class="container text-center p-2 w-auto">
+            <div class="row">
+                <div class="col-2">
+                    <div class="dropdown">
+                        <a class="button link-underline-light link-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/img/icons/mais.png" width="40px" alt="">
+                            Mais Categorias
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-around ">
+                    <a href="" class="link-underline-light link-dark mt-1">Elétrica</a>
+                    <a href="" class="link-underline-light link-dark mt-1">Ferragens</a>
+                    <a href="" class="link-underline-light link-dark mt-1">Tintas</a>
+                    <a href="" class="link-underline-light link-dark mt-1">Iluminação</a>
+                </div>
+            </div>
+        </nav>
+    </section>

@@ -1,5 +1,65 @@
-#cards{
+#cards {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+body {
+    background: rgb(11, 31, 77);
+    background: linear-gradient(52deg, rgba(11, 31, 77, 1) 0%, rgba(9, 50, 109, 1) 100%);
+}
+
+.cabecalho1 {
+    background-color: white;
+}
+
+.cabecalho2 {
+    background-color: white;
+    margin-top: 3px;
+
+}
+
+#nav1 {
+    background-color: white;
+    width: 100%;
+}
+
+
+#faixa {
+    background: rgb(252, 174, 24);
+    background: linear-gradient(90deg, rgba(252, 174, 24, 1) 0%, rgba(252, 206, 66, 1) 100%);
+    width: 100%;
+    height: 20px;
+}
+
+body {
+    font-family: Cambria;
+}
+
+#barraPesquisa {
+    background-color: #d9d9d9;
+    border-radius: 0;
+    border-color: #d9d9d9;
+}
+
+#pesquisar {
+    background-color: #d9d9d9;
+    border-radius: 0;
+}
+
+#grupoLinks{
+    border-left: 2px;
+    border-right: 2px;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-style: solid;
+    border-color: rgb(11, 31, 77);
+}
+
+.dropdown{
+    border-left: 2px;
+    border-right: 2px;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-style: solid;
 }
