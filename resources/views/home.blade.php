@@ -1,5 +1,36 @@
 @extends('layouts.masterpage')
 @section('conteudo')
+    <div class="row p-5">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="card-text p-2">Parcele Sem Juros no <b>Cartão</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="card-text">Entrega de produtos <b>Garantida</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="card-text">Compre no site e <b>Retire na Loja</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="card-text">Tudo para <b>Construir, Reformar e Decorar</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section>
         {{-- TITULO DA SESSÃO --}}
         <div>
@@ -7,7 +38,7 @@
         </div>
 
         {{-- CARDS DE PROMOÇÃO --}}
-        <div id="cards">
+        <div id="cards" class="alinhamentoDiv">
             <div class="card" style="width: 18rem;">
                 <img src="assets/img/cards/1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
