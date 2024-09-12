@@ -1,6 +1,5 @@
 body {
-    background: rgb(11, 31, 77);
-    background: linear-gradient(52deg, rgba(11, 31, 77, 1) 0%, rgba(9, 50, 109, 1) 100%);
+    background: #f4f4f4;
     font-family: Cambria;
 }
 
@@ -19,7 +18,7 @@ body {
 }
 
 nav{
-    background-color: white;
+    background-color: rgb(11, 31, 77);
     width: auto;
 }
 
@@ -30,14 +29,15 @@ nav{
 
 
 #barraPesquisa, #botaoBarraPesquisa{
-    background-color: #d9d9d9;
+    background-color: white;
     border-radius: 0;
-    border-color: #d9d9d9;
+    border-color: white;
+    font-size: 20px;
 }
 
 #navPrincipal .links{
-    border-left: 2px solid rgb(11, 31, 77);
-    border-right: 2px solid rgb(11, 31, 77);
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 }
 
 #navPrincipal #itens, #navSecundario #itens{
@@ -46,13 +46,18 @@ nav{
 
 #navSecundario {
     padding: 1px;
-    border-top: 2px solid rgb(11, 31, 77);
+    border-top: 2px solid white;
 }
 
 .dropdown{
-    border-left: 2px solid;
-    border-right: 2px solid;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
     
+}
+
+.links{
+    text-decoration: none;
+    font-size: 20px;
 }
 
 /* CARROSSEL */
@@ -61,16 +66,15 @@ nav{
 }
 
 /* HOME */
-#boxInformações{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+#boxBeneficios .item{
+    background: rgb(252, 174, 24, 0.5);
+    background: linear-gradient(90deg, rgba(252, 174, 24, 0.5) 0%, rgba(252, 206, 66, 0.5) 100%);
+    align-items: center;
 }
 
-#boxInformações .texto{
-    background-color: white;
-    padding: 10px;
-    flex-wrap: wrap;
+#boxBeneficios .item .textoItem{
+    font-size: 18px;
 }
+
+
 

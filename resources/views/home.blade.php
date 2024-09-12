@@ -1,31 +1,34 @@
 @extends('layouts.masterpage')
 @section('conteudo')
-    <div class="row p-5">
+
+    {{-- BOX BENEFÍCIOS --}}
+    <div id="boxBeneficios" class="row p-5">
         <div class="col">
-            <div class="card h-100">
-                <div class="card-body">
+            <div class="item card h-100">
+                <div class="textoItem card-body">
+                    <img src="assets/img/icons/cartaoCredito.png" alt="">
                     <p class="card-text p-2">Parcele Sem Juros no <b>Cartão</b></p>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card h-100">
-                <div class="card-body">
-                    <p class="card-text">Entrega de produtos <b>Garantida</b></p>
+            <div class="item card h-100">
+                <div class="textoItem card-body">
+                    <p class="card-text p-2">Entrega de produtos <b>Garantida</b></p>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card h-100">
-                <div class="card-body">
-                    <p class="card-text">Compre no site e <b>Retire na Loja</b></p>
+            <div class="item card h-100">
+                <div class="textoItem card-body">
+                    <p class="card-text p-2">Compre no site e <b>Retire na Loja</b></p>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card h-100">
-                <div class="card-body">
-                    <p class="card-text">Tudo para <b>Construir, Reformar e Decorar</b></p>
+            <div class="item card h-100">
+                <div class="textoItem card-body">
+                    <p class="card-text p-2">Tudo para <b>Construir, Reformar e Decorar</b></p>
                 </div>
             </div>
         </div>

@@ -1,9 +1,5 @@
 @extends('layouts.masterpage')
 
-@php
-    $carousel = 0;
-@endphp
-
 @section('conteudo')
     <x-app-layout>
         <x-slot name="header">
