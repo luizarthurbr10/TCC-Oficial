@@ -63,13 +63,10 @@ nav {
     font-size: 20px;
 }
 
-/* CARROSSEL */
-#carouselExampleIndicators {}
-
 /* HOME */
 /* box benefícios */
-#boxBeneficios .coluna{
-    
+#boxBeneficios{
+    margin: 5px 32px 5px 32px;
 }
 
 #boxBeneficios .item {
@@ -88,59 +85,60 @@ nav {
 
 
 /* cards promoção */
-#titulo{
+.titulo {
     margin-left: 43px;
+    padding: 20px;
 }
 
-.card-container {
+.card {
+    height: 400px;
+    /* Definindo altura fixa para o card */
+    width: 100%;
+    /* Card ocupa 100% da largura da coluna */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-.card-container .card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    max-width: 300px;
-    transition: transform 0.2s;
+.card-img-top {
+    object-fit: cover;
+    height: 50%;
+    /* Imagem ocupa metade da altura do card */
+}
+
+.card-body {
     overflow: hidden;
+    /* Impede que o texto ultrapasse o limite do card */
 }
 
-.card-container .card img {
-    width: 80%;
-    height: auto;
-    border-bottom: 2px solid #ddd;
-    
-}
-
-.card-container .card-content {
-    padding: 15px;
-}
-
-.card-container .card-content h3 {
+.nome{
+    font-size: 25px;
     margin-bottom: 10px;
-    color: #333;
 }
 
-.card-container .card-content p {
-    font-size: 0.9rem;
-    color: #666;
+.precoOriginal{
+    font-size: 15px;
+    color: #a6a6a6;
+    text-decoration: line-through;
 }
 
-.card-container .button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 0.9rem;
+.precoPromocao{
+    font-size: 25px;
+
 }
 
-.card-container .button:hover {
-    background-color: #0056b3;
+.parcelas{
+    font-size: 15px;
+    color: #a6a6a6;
+}
+
+/* carrossel marcas */
+.caixaCarrossel{
+    margin: 5px 32px 5px 32px;
+    width: 1200px;
+}
+
+.sessao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
