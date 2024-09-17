@@ -131,16 +131,36 @@
     <section class="sessao">
         <div class="caixaCarrossel glider-contain">
             <div class="carrossel glider">
-                <div class="c_slide">1</div>
-                <div class="c_slide">2</div>
-                <div class="c_slide">3</div>
-                <div class="c_slide">4</div>
-                <div class="c_slide">5</div>
-                <div class="c_slide">6</div>
-                <div class="c_slide">3</div>
-                <div class="c_slide">4</div>
-                <div class="c_slide">5</div>
-                <div class="c_slide">6</div>
+                <div class="c_slide">
+                    <img src="assets/img/carousel/m1.svg" alt="">
+                </div>
+                <div class="c_slide">
+                    <img src="assets/img/carousel/m2.svg" alt="">
+                </div>
+                <div class="c_slide">
+                    <img src="assets/img/carousel/m3.svg" alt="">
+                </div>
+                <div class="c_slide">
+                    <img src="assets/img/carousel/m4.svg" alt="">
+                </div>
+                <div class="c_slide">
+                    <img src="assets/img/carousel/m5.svg" alt="">
+                </div>
+                <div class="c_slide">
+                    <img src="assets/img/carousel/m6.svg" alt="">
+                </div>
+                <div class="c_slide">
+                    <img src="assets/img/carousel/m7.svg" alt="">
+                </div>
+                <div class="c_slide">
+                    <img src="assets/img/carousel/m1.svg" alt="">
+                </div>
+                <div class="c_slide">
+                    <img src="assets/img/carousel/m1.svg" alt="">
+                </div>
+                <div class="c_slide">
+                    <img src="assets/img/carousel/m1.svg" alt="">
+                </div>
             </div>
 
             <button class="glider-prev" aria-label="Previous">
@@ -150,6 +170,95 @@
                 <img src="assets/img/icons/setaDir.svg" alt="">
             </button>
             {{-- <div class="dots" role="tablist"></div> --}}
+        </div>
+    </section>
+
+    {{-- CARDS MAIS PROCURADOS --}}
+    <section>
+        <div class="titulo">
+            <h1>Os Mais Procurados</h1>
+        </div>
+
+        <div class="container mt-3">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem 1">
+                        <div class="card-body">
+                            <h5 class="nome">Nome do Produto</h5>
+                            <div>
+                                <p class="precoOriginal">R$ 00,00</p>
+                                <p class="precoPromocao">R$ 00,00</p>
+                                <p class="parcelas">Parcelas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem 2">
+                        <div class="card-body">
+                            <h5 class="nome">Nome do Produto</h5>
+                            <div>
+                                <p class="precoOriginal">R$ 00,00</p>
+                                <p class="precoPromocao">R$ 00,00</p>
+                                <p class="parcelas">Parcelas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem 3">
+                        <div class="card-body">
+                            <h5 class="nome">Nome do Produto</h5>
+                            <div>
+                                <p class="precoOriginal">R$ 00,00</p>
+                                <p class="precoPromocao">R$ 00,00</p>
+                                <p class="parcelas">Parcelas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem 3">
+                        <div class="card-body">
+                            <h5 class="nome">Nome do Produto</h5>
+                            <div>
+                                <p class="precoOriginal">R$ 00,00</p>
+                                <p class="precoPromocao">R$ 00,00</p>
+                                <p class="parcelas">Parcelas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    {{-- CONHEÇA NOSSA HISTÓRIA --}}
+    <section>
+        <div class="historia container p-5">
+            <div class="historiaConteudo row">
+                <div class="historiaTexto col-5">
+                    <h5>Conheça Nossa História</h5>
+                    <p>Maior distribuidora de tintas Ciacollor da região Centro-oeste, desde 2022 atendendo Cuiabá, Várzea Grande e região, agora On-line.</p>
+                </div>
+                <div class="historiaImagem col-4">
+                        <div>
+                            <img src="assets/img/cards/1.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <img src="assets/img/cards/1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 @endsection

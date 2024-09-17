@@ -142,3 +142,30 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+/* box historia */
+.historia{
+    background: rgb(11, 31, 77);
+    margin-top: 50px;
+}
+
+.historia .historiaTexto{
+    color: white;
+}
+
+.historiaTexto h5{
+    font-size: 30px;
+}
+
+.historiaTexto p{
+    font-size: 20px;
+}
+
+.historiaImagem{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagens{
+
+}
