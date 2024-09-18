@@ -187,7 +187,6 @@
                         <div class="card-body">
                             <h5 class="nome">Nome do Produto</h5>
                             <div>
-                                <p class="precoOriginal">R$ 00,00</p>
                                 <p class="precoPromocao">R$ 00,00</p>
                                 <p class="parcelas">Parcelas</p>
                             </div>
@@ -201,7 +200,6 @@
                         <div class="card-body">
                             <h5 class="nome">Nome do Produto</h5>
                             <div>
-                                <p class="precoOriginal">R$ 00,00</p>
                                 <p class="precoPromocao">R$ 00,00</p>
                                 <p class="parcelas">Parcelas</p>
                             </div>
@@ -215,7 +213,6 @@
                         <div class="card-body">
                             <h5 class="nome">Nome do Produto</h5>
                             <div>
-                                <p class="precoOriginal">R$ 00,00</p>
                                 <p class="precoPromocao">R$ 00,00</p>
                                 <p class="parcelas">Parcelas</p>
                             </div>
@@ -228,7 +225,6 @@
                         <div class="card-body">
                             <h5 class="nome">Nome do Produto</h5>
                             <div>
-                                <p class="precoOriginal">R$ 00,00</p>
                                 <p class="precoPromocao">R$ 00,00</p>
                                 <p class="parcelas">Parcelas</p>
                             </div>
@@ -243,18 +239,20 @@
 
     {{-- CONHEÇA NOSSA HISTÓRIA --}}
     <section>
-        <div class="historia container p-5">
+        <div class="historia container p-4">
             <div class="historiaConteudo row">
                 <div class="historiaTexto col-5">
-                    <h5>Conheça Nossa História</h5>
-                    <p>Maior distribuidora de tintas Ciacollor da região Centro-oeste, desde 2022 atendendo Cuiabá, Várzea Grande e região, agora On-line.</p>
+                    <h5>Conheça a Nossa História!</h5>
+                    <p>Maior distribuidora de tintas Ciacollor da região Centro-oeste, desde 2022 atendendo Cuiabá, Várzea
+                        Grande e região, agora On-line.</p>
                 </div>
                 <div class="historiaImagem col-4">
-                        <div>
-                            <img src="assets/img/cards/1.jpg" alt="">
+                    <div class="imagens row">
+                        <div class="imagem col-2">
+                            <img src="assets/img/cards/teste.png" alt="">
                         </div>
-                        <div class="">
-                            <img src="assets/img/cards/1.jpg" alt="">
+                        <div class="imagem col-2">
+                            <img src="assets/img/cards/teste2.png" alt="">
                         </div>
                     </div>
                 </div>

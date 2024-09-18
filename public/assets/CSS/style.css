@@ -145,27 +145,44 @@ nav {
 
 /* box historia */
 .historia{
-    background: rgb(11, 31, 77);
     margin-top: 50px;
+    display: flex;
+    background: rgb(11, 31, 77);
 }
 
 .historia .historiaTexto{
     color: white;
+    width: 520px;
 }
 
 .historiaTexto h5{
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .historiaTexto p{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .historiaImagem{
     display: flex;
-    flex-wrap: wrap;
 }
 
 .imagens{
-
+    width: 2280px;
+    height: 200px;
+    display: flex;
+    gap: 5px;
 }
+
+.imagem{
+    width: 100%;
+    flex: 1;
+}
+
+.imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* componente carrossel */
