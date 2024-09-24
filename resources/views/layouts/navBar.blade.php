@@ -20,7 +20,7 @@
                 <div class="col-4 p-3 d-flex justify-content-around">
                     <a href="" class="links link-light p-3">Home</a>
                     <a href="" class="links link-light p-3">Catálogo</a>
-                    <a href="" class="links link-light p-3">Entre ou Cadastre-se</a>
+                    <a href="login" class="links link-light p-3">Entre ou Cadastre-se</a>
                 </div>
                 <div class="col-1 p-3">
                     <a href="">

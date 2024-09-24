@@ -1,23 +1,35 @@
-    <section class="carrosselComponente">
-        <div class="carrosselBanner">
-            <div class="c-carrossel lalala">
-                <div class="c_slide2">
-                    <img src="assets/img/carousel/img1.jpg" alt="">
-                </div>
-                <div class="c_slide2">
-                    <img src="assets/img/carousel/img2.jpg" alt="">
-                </div>
-                <div class="c_slide2">
-                    <img src="assets/img/carousel/img3.jpg" alt="">
-            </div>
-    
-            <button class="glider-prev" aria-label="Previous">
-                <img src="assets/img/icons/setaEsq.svg" alt="">
-            </button>
-            <button class="glider-next" aria-label="Next">
-                <img src="assets/img/icons/setaDir.svg" alt="">
-            </button>
-            <div class="dots" role="tablist"></div>
-        </div>    
-    </section>
-    
+<div id="carouselExampleIndicators" class="carrosselHome alinhamentoDiv carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/img/carousel/img1.jpg" class="carrosselImagem d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/img/carousel/img2.jpg" class="carrosselImagem d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/img/carousel/img3.jpg" class="carrosselImagem d-block" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="esquerda" aria-hidden="true">
+            <img src="assets/img/icons/setaEsq.svg" width="50px" alt="">
+        </span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="direita" aria-hidden="true">
+            <img src="assets/img/icons/setaDir.svg" width="50px" alt="">
+        </span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>

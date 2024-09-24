@@ -128,7 +128,7 @@
     <div class="titulo">
         <h1>Navegue por Marcas</h1>
     </div>
-    <section class="sessao">
+    <section class="alinhamentoDiv sessao">
         <div class="caixaCarrossel glider-contain">
             <div class="carrossel glider">
                 <div class="c_slide">

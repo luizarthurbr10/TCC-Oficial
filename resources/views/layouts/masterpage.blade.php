@@ -1,9 +1,18 @@
 @include('layouts.head')
 @include('layouts.header')
-@include('layouts.navBar')
-@include('layouts.carousel')
+
+@if (!isset($navBar))
+    @include('layouts.navBar')
+@endif
+
+@if (!isset($carousel))
+    @include('layouts.carousel')
+@endif
 
 @yield('conteudo')
 
-@include('layouts.footer')
+@if (!isset($footer))
+    @include('layouts.footer')
+@endif
+
 @include('layouts.script')
