@@ -1,45 +1,23 @@
 /* HOME */
-/* componente carrossel */
-.carrosselHome {
-    padding: 45px;
-    width: 1500px;
-    height: 600px;
-}
-
-.carrosselImagem {
-    width: 1500px;
-    height: 480px;
-}
-
-.esquerda {
-    display: inline-block;
-    margin-right: 120px;
-}
-
-.direita {
-    display: inline-block;
-    margin-left: 120px;
-}
-
 /* box benefícios */
-#boxBeneficios {
+.boxBeneficios {
     margin: 5px 32px 5px 32px;
 }
 
-#boxBeneficios .item {
+.boxBeneficios__Item {
     background: rgb(252, 174, 24, 0.3);
     background: linear-gradient(90deg, rgba(252, 174, 24, 0.3) 0%, rgba(252, 206, 66, 0.3) 100%);
+}
+
+.boxBeneficios__conteudo {
+    font-size: 18px;
+    text-align: center;
     align-items: center;
 }
 
-#boxBeneficios .item .conteudo {
-    font-size: 18px;
-}
-
-#boxBeneficios .item .conteudo .icone {
+#boxBeneficios__icone {
     margin-left: 30px;
 }
-
 
 /* cards promoção */
 .titulo {
@@ -87,16 +65,6 @@
     color: #a6a6a6;
 }
 
-/* carrossel marcas */
-.caixaCarrossel {
-    margin: 5px 32px 5px 32px;
-    width: 1200px;
-}
-
-.sessao {
-    flex-wrap: wrap;
-}
-
 /* box historia */
 .historia {
     margin-top: 50px;
@@ -141,41 +109,3 @@
 
 
 
-/* TELA DE LOGIN */
-#login h5{
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-#login .texto{
-    font-weight: bold;
-    margin: 10px;
-
-}
-
-.botao{
-    background: black;
-    color: white;
-    width: 100%;
-    padding: 10px;
-}
-
-#google{
-    border: solid 2px gray;
-    padding: 8px;
-    width: 400px;
-}
-
-#login #titulo{
-    margin-bottom: 10px;
-}
-
-#login #conteudo{
-    flex-wrap: wrap;
-}
-
-.linkAmarelo{
-    font-size: 20px;
-}

@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="glider.css">
     <link rel="stylesheet" href="assets/CSS/style.css">
     <link rel="stylesheet" href="assets/CSS/styleNavbar.css">
+    <link rel="stylesheet" href="assets/CSS/styleLogin.css">
+    <link rel="stylesheet" href="assets/CSS/styleCarousel.css">
     <link rel="stylesheet" href="assets/CSS/styleGeral.css">
     <link rel="stylesheet" href="assets/CSS/reset.css">
 

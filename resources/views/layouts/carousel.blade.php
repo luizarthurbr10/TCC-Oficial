@@ -9,25 +9,25 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="assets/img/carousel/img1.jpg" class="carrosselImagem d-block" alt="...">
+            <img src="assets/img/carousel/img1.jpg" class="carrosselHome__Imagem d-block" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="assets/img/carousel/img2.jpg" class="carrosselImagem d-block" alt="...">
+            <img src="assets/img/carousel/img2.jpg" class="carrosselHome__Imagem d-block" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="assets/img/carousel/img3.jpg" class="carrosselImagem d-block" alt="...">
+            <img src="assets/img/carousel/img3.jpg" class="carrosselHome__Imagem d-block" alt="...">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev">
-        <span class="esquerda" aria-hidden="true">
+        <span class="carrosselHome__setaEsquerda" aria-hidden="true">
             <img src="assets/img/icons/setaEsq.svg" width="50px" alt="">
         </span>
         <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next">
-        <span class="direita" aria-hidden="true">
+        <span class="carrosselHome__setaDireita" aria-hidden="true">
             <img src="assets/img/icons/setaDir.svg" width="50px" alt="">
         </span>
         <span class="visually-hidden">Next</span>

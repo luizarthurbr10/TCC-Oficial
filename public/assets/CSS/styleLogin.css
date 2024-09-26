@@ -1,0 +1,38 @@
+/* TELA DE LOGIN */
+#login h5{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#login .texto{
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+.botao{
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+#google{
+    border: solid 2px gray;
+    padding: 8px;
+    width: 400px;
+}
+
+#login #titulo{
+    margin-bottom: 10px;
+}
+
+#login #conteudo{
+    flex-wrap: wrap;
+}
+
+.linkAmarelo{
+    font-size: 20px;
+}

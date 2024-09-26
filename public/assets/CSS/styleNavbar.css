@@ -10,26 +10,16 @@ nav {
     width: auto;
 }
 
-.nav__links--bordas{
+.bordas{
     border-left: 2px solid white;
     border-right: 2px solid white;
 }
 
-.nav__barraPesquisa {
+.navPrincipal__barraPesquisa {
     background-color: white;
     border-color: white;
     font-size: 20px;
     padding: 5px;
-}
-
-.nav__link {
-    
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.nav__Itens {
-    width: 95%;
 }
 
 .navSecundario {
@@ -37,13 +27,17 @@ nav {
     border-top: 2px solid white;
 }
 
-.dropdown {
-    border-left: 2px solid white;
-    border-right: 2px solid white;
+.navSecundario__Itens {
+    width: 95%;
 }
 
 .nav__link--SemBorda{
     text-decoration: none;
     font-size: 20px;
     padding: 4px;
+}
+
+.nav__link {                    
+    text-decoration: none;
+    font-size: 20px;
 }

@@ -1,13 +1,13 @@
 @extends('layouts.masterpage')
 @section('conteudo')
     {{-- BOX BENEFÍCIOS --}}
-    <div id="boxBeneficios" class="alinhamentoDiv row">
+    <div class="boxBeneficios alinhamentoDiv row">
 
         <div class="col coluna">
-            <div class="item rounded-0">
-                <div class="row conteudo card-body p-2 align-self-center">
+            <div class="boxBeneficios__Item rounded-0">
+                <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
                     <div class="col-4">
-                        <img class="icone" src="assets/img/icons/cartaoCredito.png" height="50px" alt="">
+                        <img class="boxBeneficios__icone" src="assets/img/icons/cartaoCredito.png" height="50px" alt="">
                     </div>
                     <div class="col texto">
                         <p class="card-text">Parcele Sem Juros no <b>Cartão</b></p>
@@ -17,10 +17,10 @@
         </div>
 
         <div class="col coluna">
-            <div class="item rounded-0">
-                <div class="row conteudo card-body p-2 align-self-center">
+            <div class="boxBeneficios__Item rounded-0">
+                <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
                     <div class="col-4">
-                        <img class="icone" src="assets/img/icons/caminhao.png" height="50px" alt="">
+                        <img class="boxBeneficios__icone" src="assets/img/icons/caminhao.png" height="50px" alt="">
                     </div>
                     <div class="col">
                         <p class="card-text">Entrega de produtos <b>Garantida</b></p>
@@ -30,10 +30,10 @@
         </div>
 
         <div class="col coluna">
-            <div class="item rounded-0">
-                <div class="row conteudo card-body p-2 align-self-center">
+            <div class="boxBeneficios__Item rounded-0">
+                <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
                     <div class="col-4">
-                        <img class="icone" src="assets/img/icons/loja.png" height="50px" alt="">
+                        <img class="boxBeneficios__icone" src="assets/img/icons/loja.png" height="50px" alt="">
                     </div>
                     <div class="col">
                         <p class="card-text">Compre no site e <b>Retire na Loja</b></p>
@@ -43,10 +43,10 @@
         </div>
 
         <div class="col coluna">
-            <div class="item rounded-0">
-                <div class="row conteudo card-body p-2 align-self-center">
+            <div class="boxBeneficios__Item rounded-0">
+                <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
                     <div class="col-4">
-                        <img class="icone" src="assets/img/icons/serrote.png" height="50px" alt="">
+                        <img class="boxBeneficios__icone" src="assets/img/icons/serrote.png" height="50px" alt="">
                     </div>
                     <div class="col">
                         <p class="card-text">Tudo para <b>Construir, Reformar e Decorar</b></p>
@@ -128,8 +128,8 @@
     <div class="titulo">
         <h1>Navegue por Marcas</h1>
     </div>
-    <section class="alinhamentoDiv sessao">
-        <div class="caixaCarrossel glider-contain">
+    <section class="alinhamentoDiv carrosselMarcas">
+        <div class="carrosselMarcas__carrossel glider-contain">
             <div class="carrossel glider">
                 <div class="c_slide">
                     <img src="assets/img/carousel/m1.svg" alt="">

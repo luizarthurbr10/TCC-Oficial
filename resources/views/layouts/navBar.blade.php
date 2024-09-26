@@ -1,15 +1,15 @@
 <body>
     <div id="faixa"></div>
     <nav>
-        <div class="nav__navPrincipal alinhamentoDiv row text-center">
+        <div class="navPrincipal alinhamentoDiv row text-center">
             <div class="col-2">
                 <a href="">
                     <img src="assets/img/logo.png" width="200px" alt="">
                 </a>
             </div>
             <div class="col-5">
-                <form class="nav__barraPesquisa d-flex" role="search">
-                    <input class="nav__barraPesquisa form-control me-2" type="search"
+                <form class="navPrincipal__barraPesquisa d-flex" role="search">
+                    <input class="navPrincipal__barraPesquisa form-control me-2" type="search"
                         placeholder="O que você está procurando?" aria-label="Search">
                     <button class="btn btn-outline " type="submit">
                         <img src="assets/img/icons/lupa.png" width="20px" alt="">
@@ -17,9 +17,9 @@
                 </form>
             </div>
             <div class="col-4 p-3 d-flex justify-content-around">
-                <a href="" class="nav__link link-light p-3">Home</a>
-                <a href="" class="nav__link link-light p-3">Catálogo</a>
-                <a href="login" class="nav__link link-light p-3">Entre ou Cadastre-se</a>
+                <a href="" class="nav__link bordas link-light p-3">Home</a>
+                <a href="" class="nav__link bordas link-light p-3">Catálogo</a>
+                <a href="login" class="nav__link bordas link-light p-3">Entre ou Cadastre-se</a>
             </div>
             <div class="col-1 p-3">
                 <a href="">
@@ -29,9 +29,9 @@
         </div>
 
         <div class="navSecundario alinhamentoDiv">
-            <div class="nav__Itens row">
+            <div class="navSecundario__Itens row">
                 <div class="col-2">
-                    <div class="alinhamentoDiv nav__links--bordas dropdown">
+                    <div class="alinhamentoDiv bordas dropdown">
                         <a class="nav__link--SemBorda link-light" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <img src="assets/img/icons/mais.png" width="50px" alt="">
@@ -52,5 +52,5 @@
                     <a href="" class="nav__link--SemBorda link-light">Iluminação</a>
                 </div>
             </div>
-        </div>
+        </div>  
     </nav>
