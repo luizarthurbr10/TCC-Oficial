@@ -1,0 +1,49 @@
+#faixa {
+    background: rgb(252, 174, 24);
+    background: linear-gradient(90deg, rgba(252, 174, 24, 1) 0%, rgba(252, 206, 66, 1) 100%);
+    width: 100%;
+    height: 20px;
+}
+
+nav {
+    background-color: rgb(11, 31, 77);
+    width: auto;
+}
+
+.nav__links--bordas{
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.nav__barraPesquisa {
+    background-color: white;
+    border-color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.nav__link {
+    
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav__Itens {
+    width: 95%;
+}
+
+.navSecundario {
+    padding: 1px;
+    border-top: 2px solid white;
+}
+
+.dropdown {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.nav__link--SemBorda{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 4px;
+}

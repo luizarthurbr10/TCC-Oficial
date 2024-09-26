@@ -1,0 +1,15 @@
+body {
+    background: #f4f4f4;
+    font-family: Cambria;
+}
+
+.fonte{
+    font-family: Cambria;
+    background-color: rgb(11, 31, 77);
+}
+
+.alinhamentoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
