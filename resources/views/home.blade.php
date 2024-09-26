@@ -65,63 +65,59 @@
         <div class="container mt-3">
             <div class="row g-4">
                 <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem 1">
-                        <div class="card-body">
-                            <h5 class="nome">Nome do Produto</h5>
+                    <div class="card card">
+                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
+                        <div class="card__body card-body">
+                            <h5 class="card__nome">Nome do Produto</h5>
                             <div>
-                                <p class="precoOriginal">R$ 00,00</p>
-                                <p class="precoPromocao">R$ 00,00</p>
-                                <p class="parcelas">Parcelas</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem 2">
-                        <div class="card-body">
-                            <h5 class="nome">Nome do Produto</h5>
-                            <div>
-                                <p class="precoOriginal">R$ 00,00</p>
-                                <p class="precoPromocao">R$ 00,00</p>
-                                <p class="parcelas">Parcelas</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem 3">
-                        <div class="card-body">
-                            <h5 class="nome">Nome do Produto</h5>
-                            <div>
-                                <p class="precoOriginal">R$ 00,00</p>
-                                <p class="precoPromocao">R$ 00,00</p>
-                                <p class="parcelas">Parcelas</p>
+                                <p class="card__precoOriginal">R$ 00,00</p>
+                                <p class="card__precoPromocao">R$ 00,00</p>
+                                <p class="card__parcelas">Parcelas</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem 3">
-                        <div class="card-body">
-                            <h5 class="nome">Nome do Produto</h5>
+                    <div class="card card">
+                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
+                        <div class="card__body card-body">
+                            <h5 class="card__nome">Nome do Produto</h5>
                             <div>
-                                <p class="precoOriginal">R$ 00,00</p>
-                                <p class="precoPromocao">R$ 00,00</p>
-                                <p class="parcelas">Parcelas</p>
+                                <p class="card__precoOriginal">R$ 00,00</p>
+                                <p class="card__precoPromocao">R$ 00,00</p>
+                                <p class="card__parcelas">Parcelas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card">
+                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
+                        <div class="card__body card-body">
+                            <h5 class="card__nome">Nome do Produto</h5>
+                            <div>
+                                <p class="card__precoOriginal">R$ 00,00</p>
+                                <p class="card__precoPromocao">R$ 00,00</p>
+                                <p class="card__parcelas">Parcelas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card">
+                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
+                        <div class="card__body card-body">
+                            <h5 class="card__nome">Nome do Produto</h5>
+                            <div>
+                                <p class="card__precoOriginal">R$ 00,00</p>
+                                <p class="card__precoPromocao">R$ 00,00</p>
+                                <p class="card__parcelas">Parcelas</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </section>
 
     {{-- CARROSSEL MARCAS --}}
@@ -182,51 +178,53 @@
         <div class="container mt-3">
             <div class="row g-4">
                 <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem 1">
-                        <div class="card-body">
-                            <h5 class="nome">Nome do Produto</h5>
+                    <div class="card card">
+                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
+                        <div class="card__body card-body">
+                            <h5 class="card__nome">Nome do Produto</h5>
                             <div>
-                                <p class="precoPromocao">R$ 00,00</p>
-                                <p class="parcelas">Parcelas</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem 2">
-                        <div class="card-body">
-                            <h5 class="nome">Nome do Produto</h5>
-                            <div>
-                                <p class="precoPromocao">R$ 00,00</p>
-                                <p class="parcelas">Parcelas</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem 3">
-                        <div class="card-body">
-                            <h5 class="nome">Nome do Produto</h5>
-                            <div>
-                                <p class="precoPromocao">R$ 00,00</p>
-                                <p class="parcelas">Parcelas</p>
+                                <p class="card__precoOriginal">R$ 00,00</p>
+                                <p class="card__precoPromocao">R$ 00,00</p>
+                                <p class="card__parcelas">Parcelas</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem 3">
-                        <div class="card-body">
-                            <h5 class="nome">Nome do Produto</h5>
+                    <div class="card card">
+                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
+                        <div class="card__body card-body">
+                            <h5 class="card__nome">Nome do Produto</h5>
                             <div>
-                                <p class="precoPromocao">R$ 00,00</p>
-                                <p class="parcelas">Parcelas</p>
+                                <p class="card__precoOriginal">R$ 00,00</p>
+                                <p class="card__precoPromocao">R$ 00,00</p>
+                                <p class="card__parcelas">Parcelas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card">
+                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
+                        <div class="card__body card-body">
+                            <h5 class="card__nome">Nome do Produto</h5>
+                            <div>
+                                <p class="card__precoOriginal">R$ 00,00</p>
+                                <p class="card__precoPromocao">R$ 00,00</p>
+                                <p class="card__parcelas">Parcelas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card">
+                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
+                        <div class="card__body card-body">
+                            <h5 class="card__nome">Nome do Produto</h5>
+                            <div>
+                                <p class="card__precoOriginal">R$ 00,00</p>
+                                <p class="card__precoPromocao">R$ 00,00</p>
+                                <p class="card__parcelas">Parcelas</p>
                             </div>
                         </div>
                     </div>
@@ -238,25 +236,23 @@
     </section>
 
     {{-- CONHEÇA NOSSA HISTÓRIA --}}
-    <section>
-        <div class="historia container p-4">
-            <div class="historiaConteudo row">
-                <div class="historiaTexto col-5">
+    <section class="boxHistoria container">
+            <div class="boxHistoria__conteudo row">
+                <div class="boxHistoria__texto col-5">
                     <h5>Conheça a Nossa História!</h5>
                     <p>Maior distribuidora de tintas Ciacollor da região Centro-oeste, desde 2022 atendendo Cuiabá, Várzea
                         Grande e região, agora On-line.</p>
                 </div>
-                <div class="historiaImagem col-4">
-                    <div class="imagens row">
-                        <div class="imagem col-2">
+                <div class="boxHistoria__boxImagens col-4">
+                    <div class="boxHistoria__imagens row">
+                        <div class="boxHistoria__imagem col-2">
                             <img src="assets/img/cards/teste.png" alt="">
                         </div>
-                        <div class="imagem col-2">
+                        <div class="boxHistoria__imagem col-2">
                             <img src="assets/img/cards/teste2.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 @endsection

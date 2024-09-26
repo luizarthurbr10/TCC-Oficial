@@ -1,0 +1,39 @@
+.card {
+    height: 400px;
+    /* Definindo altura fixa para o card */
+    width: 100%;
+    /* Card ocupa 100% da largura da coluna */
+    display: flex;
+}
+
+.card__imagem {
+    object-fit: cover;
+    height: 50%;
+    /* Imagem ocupa metade da altura do card */
+}
+
+.card__body {
+    overflow: hidden;
+    /* Impede que o texto ultrapasse o limite do card */
+}
+
+.card__nome {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.card__precoOriginal {
+    font-size: 15px;
+    color: #a6a6a6;
+    text-decoration: line-through;
+}
+
+.card__precoPromocao {
+    font-size: 25px;
+
+}
+
+.card__parcelas {
+    font-size: 15px;
+    color: #a6a6a6;
+}

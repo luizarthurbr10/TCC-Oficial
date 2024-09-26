@@ -1,0 +1,18 @@
+.boxBeneficios {
+    margin: 5px 32px 5px 32px;
+}
+
+.boxBeneficios__Item {
+    background: rgb(252, 174, 24, 0.3);
+    background: linear-gradient(90deg, rgba(252, 174, 24, 0.3) 0%, rgba(252, 206, 66, 0.3) 100%);
+}
+
+.boxBeneficios__conteudo {
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+}
+
+#boxBeneficios__icone {
+    margin-left: 30px;
+}
