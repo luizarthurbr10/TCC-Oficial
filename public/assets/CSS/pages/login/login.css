@@ -6,33 +6,32 @@
     margin-top: 10px;
 }
 
-#login .texto{
+.login__texto{
     font-weight: bold;
     margin: 10px;
-
 }
 
-.botao{
+.backgroundLogin{
+    background: rgb(11, 31, 77);
+}
+
+.login__botao{
     background: black;
     color: white;
     width: 100%;
     padding: 10px;
 }
 
-#google{
+#login__google{
     border: solid 2px gray;
     padding: 8px;
     width: 400px;
 }
 
-#login #titulo{
+#login__titulo{
     margin-bottom: 10px;
 }
 
-#login #conteudo{
+#login__conteudo{
     flex-wrap: wrap;
-}
-
-.linkAmarelo{
-    font-size: 20px;
 }

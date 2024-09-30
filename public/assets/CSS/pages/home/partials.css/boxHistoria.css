@@ -1,41 +1,39 @@
 .boxHistoria {
     display: flex;
-    padding: 25px;
-    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-image: url('background-pattern.png');
+    /* Imagem de fundo personalizada */
+    background-size: cover;
+    margin: 20px;
     background: rgb(11, 31, 77);
+    width: 88%;
 }
 
-.boxHistoria__texto {
-    width: 520px;
+.boxHistoria__textArea {
     color: white;
+    max-width: 400px;
 }
 
-.boxHistoria__texto h5 {
+.boxHistoria__textArea h2 {
     font-size: 35px;
+    margin-bottom: 10px;
 }
 
-.boxHistoria__texto p {
-    font-size: 25px;
+.boxHistoria__textArea p {
+    font-size: 20px;
+    line-height: 1.5;
 }
 
-.boxHistoria__boxImagens {
+.boxHistoria__imageArea {
     display: flex;
+    gap: 20px;
 }
 
-.boxHistoria__imagens {
-    display: flex;
-    width: 2280px;
-    height: 200px;
-    gap: 5px;
-}
-
-.boxHistoria__imagem {
-    flex: 1;
-    width: 100%;
-}
-
-.boxHistoria__imagem img {
+.boxHistoria__imageBox {
+    width: 400px;
+    height: 180px;
+    background-color: white;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
 }

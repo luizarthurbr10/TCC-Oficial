@@ -1,67 +1,70 @@
 @extends('layouts.masterpage')
 @section('conteudo')
     {{-- BOX BENEFÍCIOS --}}
-    <div class="boxBeneficios alinhamentoDiv row">
+    <div class="alinhamentoDiv">
+        <div class="boxBeneficios row">
 
-        <div class="col coluna">
-            <div class="boxBeneficios__Item rounded-0">
-                <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
-                    <div class="col-4">
-                        <img class="boxBeneficios__icone" src="assets/img/icons/cartaoCredito.png" height="50px" alt="">
-                    </div>
-                    <div class="col texto">
-                        <p class="card-text">Parcele Sem Juros no <b>Cartão</b></p>
+            <div class="col coluna">
+                <div class="boxBeneficios__Item rounded-0">
+                    <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
+                        <div class="col-4">
+                            <img class="boxBeneficios__icone" src="assets/img/icons/cartaoCredito.png" height="50px"
+                                alt="">
+                        </div>
+                        <div class="col texto">
+                            <p class="card-text">Parcele Sem Juros no <b>Cartão</b></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col coluna">
-            <div class="boxBeneficios__Item rounded-0">
-                <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
-                    <div class="col-4">
-                        <img class="boxBeneficios__icone" src="assets/img/icons/caminhao.png" height="50px" alt="">
-                    </div>
-                    <div class="col">
-                        <p class="card-text">Entrega de produtos <b>Garantida</b></p>
+            <div class="col coluna">
+                <div class="boxBeneficios__Item rounded-0">
+                    <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
+                        <div class="col-4">
+                            <img class="boxBeneficios__icone" src="assets/img/icons/caminhao.png" height="50px"
+                                alt="">
+                        </div>
+                        <div class="col">
+                            <p class="card-text">Entrega de produtos <b>Garantida</b></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col coluna">
-            <div class="boxBeneficios__Item rounded-0">
-                <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
-                    <div class="col-4">
-                        <img class="boxBeneficios__icone" src="assets/img/icons/loja.png" height="50px" alt="">
-                    </div>
-                    <div class="col">
-                        <p class="card-text">Compre no site e <b>Retire na Loja</b></p>
+            <div class="col coluna">
+                <div class="boxBeneficios__Item rounded-0">
+                    <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
+                        <div class="col-4">
+                            <img class="boxBeneficios__icone" src="assets/img/icons/loja.png" height="50px" alt="">
+                        </div>
+                        <div class="col">
+                            <p class="card-text">Compre no site e <b>Retire na Loja</b></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col coluna">
-            <div class="boxBeneficios__Item rounded-0">
-                <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
-                    <div class="col-4">
-                        <img class="boxBeneficios__icone" src="assets/img/icons/serrote.png" height="50px" alt="">
-                    </div>
-                    <div class="col">
-                        <p class="card-text">Tudo para <b>Construir, Reformar e Decorar</b></p>
+            <div class="col coluna">
+                <div class="boxBeneficios__Item rounded-0">
+                    <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
+                        <div class="col-4">
+                            <img class="boxBeneficios__icone" src="assets/img/icons/serrote.png" height="50px"
+                                alt="">
+                        </div>
+                        <div class="col">
+                            <p class="card-text">Tudo para <b>Construir, Reformar e Decorar</b></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+
     {{-- CARDS PROMOÇÃO --}}
     <section>
-        <div class="titulo">
-            <h1>Ofertas do Mês</h1>
-        </div>
-
+        <h1>Ofertas do Mês</h1>
         <div class="container mt-3">
             <div class="row g-4">
                 <div class="col-md-3">
@@ -121,9 +124,7 @@
     </section>
 
     {{-- CARROSSEL MARCAS --}}
-    <div class="titulo">
-        <h1>Navegue por Marcas</h1>
-    </div>
+    <h1>Navegue por Marcas</h1>
     <section class="alinhamentoDiv carrosselMarcas">
         <div class="carrosselMarcas__carrossel glider-contain">
             <div class="carrossel glider">
@@ -171,10 +172,7 @@
 
     {{-- CARDS MAIS PROCURADOS --}}
     <section>
-        <div class="titulo">
-            <h1>Os Mais Procurados</h1>
-        </div>
-
+        <h1>Os Mais Procurados</h1>
         <div class="container mt-3">
             <div class="row g-4">
                 <div class="col-md-3">
@@ -236,23 +234,17 @@
     </section>
 
     {{-- CONHEÇA NOSSA HISTÓRIA --}}
-    <section class="boxHistoria container">
-            <div class="boxHistoria__conteudo row">
-                <div class="boxHistoria__texto col-5">
-                    <h5>Conheça a Nossa História!</h5>
-                    <p>Maior distribuidora de tintas Ciacollor da região Centro-oeste, desde 2022 atendendo Cuiabá, Várzea
-                        Grande e região, agora On-line.</p>
-                </div>
-                <div class="boxHistoria__boxImagens col-4">
-                    <div class="boxHistoria__imagens row">
-                        <div class="boxHistoria__imagem col-2">
-                            <img src="assets/img/cards/teste.png" alt="">
-                        </div>
-                        <div class="boxHistoria__imagem col-2">
-                            <img src="assets/img/cards/teste2.png" alt="">
-                        </div>
-                    </div>
-                </div>
+    <div class="alinhamentoDiv">
+        <section class="boxHistoria">
+            <div class="boxHistoria__textArea">
+                <h2>Conheça nossa história!</h2>
+                <p>Maior distribuidora de tintas Ciacollor da região Centro-oeste, desde 2022 atendendo Cuiabá, Várzea Grande e região, agora On-line.</p>
             </div>
-    </section>
+            <div class="boxHistoria__imageArea">
+                <img src="imagem1.png" alt="Imagem 1" class="boxHistoria__imageBox">
+                <img src="imagem2.png" alt="Imagem 2" class="boxHistoria__imageBox">
+            </div>
+        </section>
+    </div>
+    
 @endsection

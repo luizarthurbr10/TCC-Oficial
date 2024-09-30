@@ -18,7 +18,7 @@
             @endsession
 
             <div id="login">
-                <div class="row alinhamentoDiv" id="titulo">
+                <div class="row alinhamentoDiv" id="login__titulo">
                     <div class="col-9 mb-2 ms-5">
                         <h5>Escolha uma Opção de Login</h5>
                     </div>
@@ -29,16 +29,16 @@
                     </div>
                 </div>
                 <div>
-                    <button class="alinhamentoDiv" id="google">
+                    <button class="alinhamentoDiv" id="login__google">
                         <img src="assets/img/icons/google.png" width="30px" alt="">
                         <label for="">Entrar com o Google</label>
                     </button>
                 </div>
                 <div class="alinhamentoDiv mt-2">
-                    <label class="texto">Ou</label>
+                    <label class="login__texto">Ou</label>
                 </div>
-                <div class="alinhamentoDiv" id="conteudo">
-                    <p class="texto">Continuar com E-mail e Senha:</p>
+                <div class="alinhamentoDiv" id="login__conteudo">
+                    <p class="login__texto">Continuar com E-mail e Senha:</p>
                 </div>
             </div>
 

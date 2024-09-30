@@ -1,6 +1,8 @@
 #faixa {
+    /* Definem a cor da faixa */
     background: rgb(252, 174, 24);
     background: linear-gradient(90deg, rgba(252, 174, 24, 1) 0%, rgba(252, 206, 66, 1) 100%);
+    /* Definem a largura e a altura da faixa, respectivamente, em 100% da tela e  */
     width: 100%;
     height: 20px;
 }

@@ -1,12 +1,8 @@
 /* CARROSSEL DE BANNERS */
 .carrosselHome {
     padding: 45px;
-    width: 1500px;
+    width: 92%;
     height: 600px;
-    margin: 5px 32px 5px 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .carrosselHome__Imagem {
@@ -27,7 +23,7 @@
 /* CARROSSEL DE MARCAS */
 .carrosselMarcas__carrossel {
     margin: 5px 32px 5px 32px;
-    width: 1200px;
+    width: 83%;
 }
 
 .carrosselMarcas {

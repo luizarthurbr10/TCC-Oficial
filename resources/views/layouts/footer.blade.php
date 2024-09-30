@@ -1,20 +1,44 @@
-<div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
+<footer>
+    <div class="footer__container backgroundImg">
+        <div class="footer__logoSection">
+            <img src="assets/img/logo/logo--fundo.png" alt="Logo Distribuidora Vitória" class="logo">
+            <p>Atendimento via WhatsApp de segunda à sexta 7:00 às 18:00</p>
+            <p> <img src="assets/img/icons/telefone.svg" alt=""> (65) 98134-7224</p>
+            <p> <img src="assets/img/icons/telefone.svg" alt=""> (65) 99249-0944</p>
+            <p> <img src="assets/img/icons/instagram.svg" alt=""> @Vitoriadistribuidoramt</p>
+            <p> <img src="assets/img/icons/facebook.svg" alt=""> @Vitoriadistribuidoramt</p>
+        </div>
 
-        <a href="/"
-            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32">
-                <use xlink:href="#bootstrap" />
-            </svg>
-        </a>
+        <div class="footer__linksSection">
+            <div class="atendimento">
+                <h3>Atendimento</h3>
+                <ul>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Dúvidas Frequentes</a></li>
+                    <li><a href="#">Política de Entrega</a></li>
+                    <li><a href="#">Retirada na Loja</a></li>
+                    <li><a href="#">Troca e Devolução</a></li>
+                </ul>
+            </div>
 
-        <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-        </ul>
-    </footer>
-</div>
+            <div class="institucional">
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_newsletterSection">
+            <h3>Receba nossas melhores ofertas por e-mail</h3>
+            <form action="#">
+                <input type="text" placeholder="Nome">
+                <input type="tel" placeholder="Telefone">
+                <input type="email" placeholder="Seu melhor e-mail">
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+    </div>
+</footer>
