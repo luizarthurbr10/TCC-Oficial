@@ -11,3 +11,5 @@ new Glider(document.querySelector('.glider'), {
     }
 });
 
+
+

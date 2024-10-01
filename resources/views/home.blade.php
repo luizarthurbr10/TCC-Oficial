@@ -1,62 +1,29 @@
 @extends('layouts.masterpage')
 @section('conteudo')
     {{-- BOX BENEFÍCIOS --}}
-    <div class="alinhamentoDiv">
-        <div class="boxBeneficios row">
-
-            <div class="col coluna">
-                <div class="boxBeneficios__Item rounded-0">
-                    <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
-                        <div class="col-4">
-                            <img class="boxBeneficios__icone" src="assets/img/icons/cartaoCredito.png" height="50px"
-                                alt="">
-                        </div>
-                        <div class="col texto">
-                            <p class="card-text">Parcele Sem Juros no <b>Cartão</b></p>
-                        </div>
-                    </div>
-                </div>
+    <div class="features-container">
+        <div class="feature-box">
+            <img src="assets/img/icons/cartaoCredito.png" alt="">
+            <div>
+                <p>Parcele <strong>Sem Juros</strong> nos cartões</p>
             </div>
-
-            <div class="col coluna">
-                <div class="boxBeneficios__Item rounded-0">
-                    <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
-                        <div class="col-4">
-                            <img class="boxBeneficios__icone" src="assets/img/icons/caminhao.png" height="50px"
-                                alt="">
-                        </div>
-                        <div class="col">
-                            <p class="card-text">Entrega de produtos <b>Garantida</b></p>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class="feature-box">
+            <img src="assets/img/icons/caminhao.png" alt="">
+            <div>
+                <p>Entrega de produtos <strong>Garantida</strong></p>
             </div>
-
-            <div class="col coluna">
-                <div class="boxBeneficios__Item rounded-0">
-                    <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
-                        <div class="col-4">
-                            <img class="boxBeneficios__icone" src="assets/img/icons/loja.png" height="50px" alt="">
-                        </div>
-                        <div class="col">
-                            <p class="card-text">Compre no site e <b>Retire na Loja</b></p>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class="feature-box">
+            <img src="assets/img/icons/loja.png" alt="">
+            <div>
+                <p>Compre no site e <strong>Retire na Loja</strong></p>
             </div>
-
-            <div class="col coluna">
-                <div class="boxBeneficios__Item rounded-0">
-                    <div class="row boxBeneficios__conteudo card-body p-2 align-self-center">
-                        <div class="col-4">
-                            <img class="boxBeneficios__icone" src="assets/img/icons/serrote.png" height="50px"
-                                alt="">
-                        </div>
-                        <div class="col">
-                            <p class="card-text">Tudo para <b>Construir, Reformar e Decorar</b></p>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class="feature-box">
+            <img src="assets/img/icons/serrote.png" alt="">
+            <div>
+                <p>Tudo para <strong>Construir, Reformar e Decorar</strong></p>
             </div>
         </div>
     </div>

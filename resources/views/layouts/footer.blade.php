@@ -1,7 +1,7 @@
 <footer>
     <div class="footer__container backgroundImg">
         <div class="footer__logoSection">
-            <img src="assets/img/logo/logo--fundo.png" alt="Logo Distribuidora Vitória" class="logo">
+            <img src="assets/img/logo/logoComFundo.png" alt="Logo Distribuidora Vitória" class="logo">
             <p>Atendimento via WhatsApp de segunda à sexta 7:00 às 18:00</p>
             <p> <img src="assets/img/icons/telefone.svg" alt=""> (65) 98134-7224</p>
             <p> <img src="assets/img/icons/telefone.svg" alt=""> (65) 99249-0944</p>
