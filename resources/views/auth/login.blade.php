@@ -17,7 +17,7 @@
                 </div>
             @endsession
 
-            {{-- <div id="login">
+            <div id="login">
                 <div class="row alinhamentoDiv" id="login__titulo">
                     <div class="col-9 mb-2 ms-5">
                         <h5>Escolha uma Opção de Login</h5>
@@ -40,7 +40,7 @@
                 <div class="alinhamentoDiv" id="login__conteudo">
                     <p class="login__texto">Continuar com E-mail e Senha:</p>
                 </div>
-            </div> --}}
+            </div>
 
             <form method="POST" action="{{ route('login') }}">
                 @csrf
@@ -57,7 +57,7 @@
 
                 @if (Route::has('password.request'))
                     <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                        style="color: #fbbc05; font-size: 18px" href="{{ route('password.request') }}">
+                        style="color: #fbbc05; font-size: 15px" href="{{ route('password.request') }}">
                         {{ __('Esqueceu sua senha?') }}
                     </a>
                 @endif
@@ -77,7 +77,7 @@
             </form>
             <div>
                 <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                style="color: #fbbc05; font-size: 18px" href="{{ route('register') }}">
+                style="color: #fbbc05; font-size: 15px" href="{{ route('register') }}">
                     {{ __('Não tem uma conta? Cadastre-se') }}
                 </a>
             </div>

@@ -39,7 +39,7 @@
             </div>
 
             <div>
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" style="color: #fbbc05; font-size: 18px" href="{{ route('login') }}">
+                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" style="color: #fbbc05; font-size: 15px" href="{{ route('login') }}">
                     {{ __('Voltar') }}
                 </a>
             </div>

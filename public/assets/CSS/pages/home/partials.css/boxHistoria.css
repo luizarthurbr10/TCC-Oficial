@@ -1,39 +1,87 @@
 .boxHistoria {
     display: flex;
+    flex-wrap: wrap; /* Permite que os itens se reorganizem em telas menores */
     justify-content: space-around;
     align-items: center;
     padding: 30px;
     background-image: url('background-pattern.png');
-    /* Imagem de fundo personalizada */
     background-size: cover;
+    background-color: rgb(11, 31, 77);
     margin: 20px;
-    background: rgb(11, 31, 77);
-    width: 88%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que padding não afete a largura */
 }
 
 .boxHistoria__textArea {
     color: white;
     max-width: 400px;
+    margin-bottom: 20px; /* Adicionado para espaçamento em telas menores */
+    text-align: center; /* Centraliza o texto em telas pequenas */
 }
 
 .boxHistoria__textArea h2 {
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 .boxHistoria__textArea p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .boxHistoria__imageArea {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* Permite que as imagens quebrem linha em telas pequenas */
+    justify-content: center;
 }
 
 .boxHistoria__imageBox {
-    width: 400px;
-    height: 180px;
+    width: 100%;
+    max-width: 400px; /* Limita o tamanho máximo da imagem */
+    height: auto;
     background-color: white;
     object-fit: cover;
+    margin-bottom: 10px; /* Adicionado para separar as imagens em telas pequenas */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .boxHistoria {
+        flex-direction: column; /* Alinha o conteúdo em coluna em telas menores */
+        padding: 20px;
+        text-align: center;
+    }
+
+    .boxHistoria__textArea {
+        max-width: 100%;
+    }
+
+    .boxHistoria__imageArea {
+        justify-content: center;
+    }
+
+    .boxHistoria__textArea h2 {
+        font-size: 28px;
+    }
+
+    .boxHistoria__textArea p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .boxHistoria__textArea h2 {
+        font-size: 24px;
+    }
+
+    .boxHistoria__textArea p {
+        font-size: 14px;
+    }
+
+    .boxHistoria__imageBox {
+        max-width: 100%; /* As imagens ocupam a largura total */
+    }
 }

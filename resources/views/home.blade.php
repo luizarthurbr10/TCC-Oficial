@@ -208,8 +208,8 @@
                 <p>Maior distribuidora de tintas Ciacollor da região Centro-oeste, desde 2022 atendendo Cuiabá, Várzea Grande e região, agora On-line.</p>
             </div>
             <div class="boxHistoria__imageArea">
-                <img src="imagem1.png" alt="Imagem 1" class="boxHistoria__imageBox">
-                <img src="imagem2.png" alt="Imagem 2" class="boxHistoria__imageBox">
+                <img src="assets/img/carousel/img1.jpg" alt="Imagem 1" class="boxHistoria__imageBox">
+                <img src="assets/img/carousel/img2.jpg" alt="Imagem 2" class="boxHistoria__imageBox">
             </div>
         </section>
     </div>

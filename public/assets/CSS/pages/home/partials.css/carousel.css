@@ -1,24 +1,66 @@
 /* CARROSSEL DE BANNERS */
 .carrosselHome {
-    padding: 45px;
-    width: 92%;
-    height: 600px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    margin: 0 auto;
 }
 
 .carrosselHome__Imagem {
-    width: 1500px;
-    height: 480px;
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
 }
 
 .carrosselHome__setaEsquerda {
     display: inline-block;
-    margin-right: 120px;
+    margin-right: 20px;
 }
 
 .carrosselHome__setaDireita {
     display: inline-block;
-    margin-left: 120px;
+    margin-left: 20px;
 }
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .carrosselHome__Imagem {
+        max-height: 400px;
+    }
+
+    .carrosselHome__setaEsquerda,
+    .carrosselHome__setaDireita {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carrosselHome__Imagem {
+        max-height: 300px;
+    }
+
+    .carrosselHome__setaEsquerda,
+    .carrosselHome__setaDireita {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carrosselHome__Imagem {
+        max-height: 200px;
+    }
+
+    .carrosselHome__setaEsquerda,
+    .carrosselHome__setaDireita {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+
 
 /* CARROSSEL DE MARCAS */
 .carrosselMarcas__carrossel {
