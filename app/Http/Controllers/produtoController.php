@@ -13,6 +13,7 @@ class produtoController extends Controller
 
         $produto->nome = $request->nome;
         $produto->descricao = $request->descricao;
+        $produto->cor = $request->cor;
         $produto->valor = $request->valor;
         $produto->quantidade = $request->quantidade;
 
@@ -24,9 +25,31 @@ class produtoController extends Controller
         return back();
     }
     
-    // Função para consultar produto
+    // Função para Consultar Produto
     public function consultar(){
         $produto = Produto::all();
-        return view('pages.conProduto', ['produto' => $produto]);
+        return view('pages.conproduto', ['produto' => $produto]);
+    }
+
+    // Função para Deletar Produto
+    public function deletar($id){
+
+        $produto = Produto::find($id);
+
+        $produto->delete();
+        return back();
+    }
+
+    // Função para Alterar Produto
+    public function alterar($id){
+
+        $produto = Produto::find($id);
+        return view('pages.cadproduto', ['produto' => $produto]);
+
+    }
+
+    public function home(){
+        $produto = Produto::all();//SELECT * FROM produdto;
+        return view('home', ['produto'=> $produto]);
     }
 }

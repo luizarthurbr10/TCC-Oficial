@@ -10,7 +10,7 @@
             <div class="col-12 col-md-4 p-3 d-flex justify-content-around">
                 <a href="" class="nav__link bordas link-light p-3">Home</a>
                 <a href="{{route('cadproduto')}}" class="nav__link bordas link-light p-3">Cad Produtos</a>
-                <a href="{{route('conproduto')}}" class="nav__link bordas link-light p-3">Con Produtos</a>
+                <a href="{{route('consultar')}}" class="nav__link bordas link-light p-3">Con Produtos</a>
 
                 <form class="p-3" action="logout" method="post">
                     @csrf

@@ -5,15 +5,15 @@
     @include('layouts.navBar2')
 @endif
 
-@if (!isset($carousel))
+{{-- @if (!isset($carousel))
     @include('layouts.carousel')
-@endif
+@endif --}}
 
 @yield('conteudo')
 
-@if (!isset($footer))
+{{-- @if (!isset($footer))
     @include('layouts.footer')
-@endif
+@endif --}}
 
 @include('layouts.script')
 
