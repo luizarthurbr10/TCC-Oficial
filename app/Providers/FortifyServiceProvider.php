@@ -13,6 +13,12 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 use Laravel\Fortify\Fortify;
 
+//Autenticação de usuário com nível de acesso
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+
+Fortify::createUsersUsing(CreateNewUser::class);
+
 class FortifyServiceProvider extends ServiceProvider
 {
     /**
@@ -41,6 +47,15 @@ class FortifyServiceProvider extends ServiceProvider
 
         RateLimiter::for('two-factor', function (Request $request) {
             return Limit::perMinute(5)->by($request->session()->get('login.id'));
+        });
+
+        Fortify::authenticateUsing(function (Request $request) {
+            $user = User::where(Fortify::username(), $request->input(Fortify::username()))->first();
+   
+            if ($user && Hash::check($request->password, $user->password)) {
+                session(['role' => $user->role]); // Armazena o campo 'role' na sessão
+                return $user; // Retorna o usuário para autenticação
+            }
         });
     }
 }
