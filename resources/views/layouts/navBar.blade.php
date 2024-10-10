@@ -17,7 +17,7 @@
                 </form>
             </div>
             <div class="col-12 col-md-4 p-3 d-flex justify-content-around">
-                <a href="" class="nav__link bordas link-light p-3">Home</a>
+                <a href="/" class="nav__link bordas link-light p-3">Home</a>
                 <a href="{{route('catalogo')}}" class="nav__link bordas link-light p-3">Catálogo</a>
                 @guest
                     <a href="login" class="nav__link bordas link-light p-3">Entre ou Cadastre-se</a>

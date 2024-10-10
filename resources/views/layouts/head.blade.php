@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/CSS/global/global.css">
     <link rel="stylesheet" href="assets/CSS/pages/home/home.css">
     <link rel="stylesheet" href="assets/CSS/pages/login/login.css">
+    <link rel="stylesheet" href="assets/CSS/pages/catalogo/catalogo.css">
 
 </head>
 

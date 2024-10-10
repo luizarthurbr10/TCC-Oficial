@@ -17,6 +17,8 @@ Route::post('produtos/create',[produtoController::class,'create']) ->name('creat
 
 Route::get('conproduto',[produtoController::class,'consultar']) ->name('consultar');
 
+Route::get('catalogo',[produtoController::class,'catalogo']) ->name('catalogo');
+
 Route::get('deletar/{id}',[produtoController::class,'deletar']) ->name('deletar');
 
 Route::get('alterar/{id}',[produtoController::class,'alterar']) ->name('alterarproduto');

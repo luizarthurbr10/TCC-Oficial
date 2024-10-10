@@ -31,6 +31,11 @@ class produtoController extends Controller
         return view('pages.conproduto', ['produto' => $produto]);
     }
 
+    public function catalogo(){
+        $produto = Produto::all();
+        return view('pages.catalogo', ['produto' => $produto]);
+    }
+
     // Função para Deletar Produto
     public function deletar($id){
 

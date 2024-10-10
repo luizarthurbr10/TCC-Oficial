@@ -5,7 +5,7 @@
 @endphp
 
 @section('conteudo')
-    <table class="container table mt-5">
+    <table class="container table table-striped mt-5">
         <thead>
             <tr>
                 <th>Id</th>
@@ -24,18 +24,19 @@
                     <td>{{ $item->id }}</td>
                     <td>{{ $item->nome }}</td>
                     <td>
-                        R$ {{number_format($item->valor,2,",",".")}}
+                        {{-- R$ {{number_format($item->valor,2,",",".")}} --}}
+                        {{$item->valor}}
                     </td>
                     <td>{{ $item->descricao }}</td>
                     <td>{{ $item->cor }}</td>
                     <td>{{ $item->quantidade }}</td>
 
                     <td>
-                        <img src="/storage/images/{{ $item->imagem }}" width="40" />
+                        <img src="/storage/images/{{ $item->imagem }}" width="100" />
                     </td>
                     <td>
                         <a href="alterar/{{$item->id}}" class="btn btn-warning">Alterar</a>
-                        <a href="deletar/{{$item->id}}" class="btn btn-danger">Deletar</a>
+                        <a href="deletar/{{$item->id}}" class="btn btn-danger mt-2">Deletar</a>
                     </td>
                 </tr>
             @endforeach
