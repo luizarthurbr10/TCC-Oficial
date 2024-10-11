@@ -14,8 +14,7 @@
                         <div class="card__body card-body">
                             <h5 class="card__nome">{{ $item->nome }}</h5>
                             <div>
-                                {{-- <p class="card__item">R$ {{number_format($item->valor,2,",",".")}}</p> --}}
-                                <p class="card__item">R$ {{$item->valor}}</p>
+                                <p class="card__item">R$ {{number_format($item->valor,2,",",".")}}</p>
                                 <p class="card__item--menor">{{ $item->descricao }}</p>
                                 <p class="card__item--menor">{{ $item->cor }}</p>
                             </div>  

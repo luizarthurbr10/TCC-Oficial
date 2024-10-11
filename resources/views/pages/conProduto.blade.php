@@ -24,8 +24,7 @@
                     <td>{{ $item->id }}</td>
                     <td>{{ $item->nome }}</td>
                     <td>
-                        {{-- R$ {{number_format($item->valor,2,",",".")}} --}}
-                        {{$item->valor}}
+                        R$ {{number_format($item->valor,2,",",".")}}
                     </td>
                     <td>{{ $item->descricao }}</td>
                     <td>{{ $item->cor }}</td>
