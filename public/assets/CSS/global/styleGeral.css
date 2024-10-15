@@ -1,6 +1,7 @@
 .body {
     background: #f4f4f4;
     font-family: Cambria;
+    color: black;
 }
 
 .alinhamentoDiv {
@@ -13,4 +14,7 @@ h1 {
     padding: 20px;
     margin-top: 5px;
     margin-left: 76px;
+    font-weight: 500;
 }
+
+

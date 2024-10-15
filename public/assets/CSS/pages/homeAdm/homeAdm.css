@@ -1,0 +1,45 @@
+body {
+    background: rgb(11, 31, 77);
+}
+
+.homeAdm{
+    height: 100vh;
+    font-family: Cambria;
+}
+
+.homeAdm__links{
+    flex-direction: column;
+    
+}
+
+.homeAdm__link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to right, #f9c56a, #f7cf7f);
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.homeAdm__link img{
+    width: 40px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+.link{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.homeAdm__link--sair{
+    background: #B22222;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}

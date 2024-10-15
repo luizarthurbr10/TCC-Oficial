@@ -32,7 +32,7 @@
                 @endauth
             </div>
             <div class="col-12 col-md-1 text-center text-md-right p-3">
-                <a href="">
+                <a href="{{route('carrinho')}}">
                     <img src="assets/img/icons/carrinho-de-compras.png" class="carrinho" alt="">
                 </a>
             </div>

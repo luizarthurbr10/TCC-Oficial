@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="assets/CSS/pages/home/home.css">
     <link rel="stylesheet" href="assets/CSS/pages/login/login.css">
     <link rel="stylesheet" href="assets/CSS/pages/catalogo/catalogo.css">
+    <link rel="stylesheet" href="assets/CSS/pages/homeAdm/homeAdm.css">
+    <link rel="stylesheet" href="assets/CSS/pages/cadProduto/cadProduto.css">
 
 </head>
 

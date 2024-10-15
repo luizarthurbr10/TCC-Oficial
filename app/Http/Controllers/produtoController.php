@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Produto;
 use Illuminate\Http\Request;
 
-class produtoController extends Controller
+class ProdutoController extends Controller
 {
     // função para cadastrar produto
     public function create(Request $request){
@@ -16,6 +16,8 @@ class produtoController extends Controller
         $produto->cor = $request->cor;
         $produto->valor = $request->valor;
         $produto->quantidade = $request->quantidade;
+        $produto->fornecedor = $request->fornecedor;
+        // $produto->categoria = $request->categoria;
 
         $nomeimg = $produto->imagem = time().".".$request->imagem->extension();
         $request->file('imagem')->storeAs('public/images', $nomeimg);
