@@ -25,7 +25,7 @@ class CategoriaController extends Controller
         return view('pages.cadCategoria', ['categoria' => $categoria]);
     }
 
-    public function selecionar(){
+    public function categorias(){
         $categoria = Categoria::all();
         return view('pages.cadProduto', ['categoria' => $categoria]);
     }

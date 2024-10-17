@@ -17,7 +17,7 @@ class ProdutoController extends Controller
         $produto->valor = $request->valor;
         $produto->quantidade = $request->quantidade;
         $produto->fornecedor = $request->fornecedor;
-        // $produto->categoria = $request->categoria;
+        $produto->categoria = $request->categoria;
 
         $nomeimg = $produto->imagem = time().".".$request->imagem->extension();
         $request->file('imagem')->storeAs('public/images', $nomeimg);
@@ -59,4 +59,9 @@ class ProdutoController extends Controller
         $produto = Produto::all();//SELECT * FROM produdto;
         return view('home', ['produto'=> $produto]);
     }
+
+    // TESTEEEE
+    // public function lalala(){
+       
+    // }
 }

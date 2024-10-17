@@ -36,12 +36,15 @@
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Categoria:</label>
+                <label  class="form-label">Categoria:</label>
                 <select name="categoria" class="form-select" aria-label="Default select example">
                     <option selected>Escolher Categoria</option>
-                    @foreach ($categoria as $item)
-                        <option value="{{$item->idCategoria}}">{{$item->nomeCategoria}}</option>
-                    @endforeach
+                    {{-- @foreach ($categoria as $item)
+                        <option value="{{$item->idCategoria}}">
+                            {{$item->nomeCategoria}}
+                        </option>
+                    @endforeach --}}
+
                 </select>
             </div>
 
@@ -49,9 +52,12 @@
                 <label class="form-label">Fornecedor:</label>
                 <select name="forneceodr" class="form-select" aria-label="Default select example">
                     <option selected>Escolher Fornecedor</option>
-                    {{-- @foreach ($categoria as $cat)
-                        <option value="{{$cat->idCategoria}}">{{$cat->nomeCategoria}}</option>
+                    {{-- @foreach ($fornecedor as $item)
+                        <option value="{{$item->idFornecedor}}">
+                            {{$item->nomeFornecedor}}
+                        </option>
                     @endforeach --}}
+                    <option value="">lalala</option>
                 </select>
             </div>
             <div class="mb-3">

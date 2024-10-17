@@ -11,11 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="glider.css">
     <link rel="stylesheet" href="assets/CSS/global/global.css">
-    <link rel="stylesheet" href="assets/CSS/pages/home/home.css">
-    <link rel="stylesheet" href="assets/CSS/pages/login/login.css">
-    <link rel="stylesheet" href="assets/CSS/pages/catalogo/catalogo.css">
-    <link rel="stylesheet" href="assets/CSS/pages/homeAdm/homeAdm.css">
-    <link rel="stylesheet" href="assets/CSS/pages/cadProduto/cadProduto.css">
+    <link rel="stylesheet" href="assets/CSS/pages/carrinho/carrinho.css">
 
 </head>
 

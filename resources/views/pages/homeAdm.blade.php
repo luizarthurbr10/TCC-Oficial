@@ -18,14 +18,12 @@
             <div class="homeAdm__link mt-5">
                 <a class="link" href="{{ route('fornecedores') }}">
                     <img src="assets/img/icons/corporacao.png" alt="">
-
                     Gerenciar Fornecedores
                 </a>
             </div>
             <div class="homeAdm__link mt-5">
                 <a class="link" href="{{ route('consultar') }}">
                     <img src="assets/img/icons/lupa.png" alt="">
-
                     Consultar Produtos
                 </a>
             </div>
