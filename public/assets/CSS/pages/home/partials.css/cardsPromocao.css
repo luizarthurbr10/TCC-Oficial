@@ -7,9 +7,18 @@
 }
 
 .card__imagem {
-    object-fit: cover;
-    height: 50%;
+    /* object-fit: cover; */
+    height: 100%;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
     /* Imagem ocupa metade da altura do card */
+}
+
+.gambiarraImg{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .card__body {

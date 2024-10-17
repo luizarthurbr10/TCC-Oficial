@@ -11,7 +11,8 @@ Route::get('/homeAdministrador', function () { return view('pages.homeAdm'); })-
 
 Route::get('/catalogo', function () { return view('pages.catalogo'); })->name('catalogo');
 
-Route::get('/cadprodutos', function () { return view('pages.cadProduto'); })->name('cadproduto');
+// Route::get('/cadprodutos', function () { return view('pages.cadProduto'); })->name('cadproduto');
+Route::get('/cadprodutos',[ProdutoController::class,'cadprodutos']) ->name('cadprodutos');
 
 Route::get('/fornecedores', function () { return view('pages.cadFornecedor'); })->name('fornecedores');
 
@@ -36,8 +37,6 @@ Route::get('/',[ProdutoController::class,'home'])->name('home');
 Route::post('categoria/create',[CategoriaController::class,'create']) ->name('createcategoria');
 
 Route::get('categorias',[CategoriaController::class,'consultar']) ->name('categorias');
-
-Route::get('cadproduto',[CategoriaController::class,'selecionar']) ->name('selecionar');
 
 Route::get('deletar/{id}',[CategoriaController::class,'deletar']) ->name('deletar');
 

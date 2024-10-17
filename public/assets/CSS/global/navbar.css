@@ -5,7 +5,7 @@
 }
 
 nav {
-    background-color: rgb(11, 31, 77);
+    background-color: rgb(11,55,102);
     width: auto;
 }
 
@@ -48,6 +48,17 @@ nav {
 .carrinho {
     width: 60px;
     max-width: 100%;
+}
+
+.navPrincipal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gambiarra01{
+    margin-right: 4%;
+    font-size: 20px;
 }
 
 /* ESTUDAR COMO FUNCIONA!!! */

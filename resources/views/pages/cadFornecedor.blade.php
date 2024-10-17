@@ -1,4 +1,7 @@
 @extends('layouts.masterpage2')
+@php
+    $carousel = 0;
+@endphp
 
 @section('conteudo')
 <div class="lalala container mt-4">

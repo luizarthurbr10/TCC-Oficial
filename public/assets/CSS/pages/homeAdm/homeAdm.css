@@ -1,5 +1,5 @@
 body {
-    background: rgb(11, 31, 77);
+    background: rgb(11,55,102);
 }
 
 .homeAdm{
@@ -36,7 +36,7 @@ body {
 }
 
 .homeAdm__link--sair{
-    background: #B22222;
+    background: rgb(11,55,102);
     padding: 10px 20px;
     border-radius: 8px;
     width: 100%;

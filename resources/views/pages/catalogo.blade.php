@@ -9,15 +9,16 @@
         <div class="row g-4 alinhamentoDiv">
             @foreach ($produto as $item)
             <div class="col-md-3">
-                    <div class="card card">
-                        <img src="/storage/images/{{ $item->imagem }}" class="card__imagem card-img-top" alt="Imagem 1">
+                    <div class="cardCatalogo card card">
+                        <div class="gambiarraImg">
+                            <img src="/storage/images/{{ $item->imagem }}" class="card__imagem card-img-top form-control" alt="Imagem 1">
+                        </div>
                         <div class="card__body card-body">
                             <h5 class="card__nome">{{ $item->nome }}</h5>
-                            <div>
-                                <p class="card__item">R$ {{number_format($item->valor,2,",",".")}}</p>
-                                <p class="card__item--menor">{{ $item->descricao }}</p>
-                                <p class="card__item--menor">{{ $item->cor }}</p>
-                            </div>  
+                            <div class="divCard__item">
+                                <p class="card__item">R$ {{$item->valor}}</p>
+                                <p class="card__item--menor"><b>Descrição: </b>{{$item->descricao}}</p>
+                            </div>   
                         </div>
                     </div>
             </div>

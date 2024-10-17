@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categoria;
 use App\Models\Produto;
+use App\Models\Fornecedor;
 use Illuminate\Http\Request;
 
 class ProdutoController extends Controller
@@ -17,7 +19,7 @@ class ProdutoController extends Controller
         $produto->valor = $request->valor;
         $produto->quantidade = $request->quantidade;
         $produto->fornecedor = $request->fornecedor;
-        // $produto->categoria = $request->categoria;
+        $produto->categoria = $request->categoria;
 
         $nomeimg = $produto->imagem = time().".".$request->imagem->extension();
         $request->file('imagem')->storeAs('public/images', $nomeimg);
@@ -58,5 +60,12 @@ class ProdutoController extends Controller
     public function home(){
         $produto = Produto::all();//SELECT * FROM produdto;
         return view('home', ['produto'=> $produto]);
+    }
+
+    // visualizar categorias no select
+    public function cadprodutos(){
+        $categoria = Categoria::all();
+        $fornecedor = Fornecedor::all();
+        return view('pages.cadProduto', ['categoria' => $categoria, 'fornecedor'=>$fornecedor]);
     }
 }

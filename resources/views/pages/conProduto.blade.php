@@ -1,5 +1,7 @@
 @extends('layouts.masterpage2')
-
+@php
+    $carousel = 0;
+@endphp
 @section('conteudo')
     <div class="lalala container mt-4">
         <div class="headAdm">
@@ -29,14 +31,13 @@
                         <td>{{ $item->id }}</td>
                         <td>{{ $item->nome }}</td>
                         <td>
-                            R$ {{ number_format($item->valor, 2, ',', '.') }}
+                            R$ {{$item->valor}}
                         </td>
                         <td>{{ $item->descricao }}</td>
                         <td>{{ $item->cor }}</td>
                         <td>{{ $item->quantidade }}</td>
                         <td>{{ $item->fornecedor }}</td>
                         <td>{{ $item->categoria }}</td>
-
                         <td>
                             <img src="/storage/images/{{ $item->imagem }}" width="100" />
                         </td>

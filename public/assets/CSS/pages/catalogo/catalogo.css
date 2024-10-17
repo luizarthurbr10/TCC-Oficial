@@ -1,7 +1,27 @@
 .card__item{
-    font-size: 30px;
+    font-size: 35px;
 }
 
+.card__nome{
+    font-size: 35px;
+}
 .card__item--menor{
     font-size: 18px;
+}
+
+.cardCatalogo{
+    height: 500px;
+    width: 350px;
+}   
+
+.divCard__item{
+    margin-top: 20px;
+}
+
+/* .catalogoImagem{
+    padding: 5px;
+} */
+
+.card__imagem{
+    background-size: 100% 100%;
 }

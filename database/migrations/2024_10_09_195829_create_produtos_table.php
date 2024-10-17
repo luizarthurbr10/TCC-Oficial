@@ -18,8 +18,7 @@ return new class extends Migration
             $table->float('valor');
             $table->string('descricao');
             $table->integer('quantidade');
-            // $table->integer('idCategoria')->unsigned();
-            // $table->foreign('idCategoria')->references('id')->on('categorias');
+            $table->string('categoria');
             $table->string('fornecedor');
             $table->string('cor');
             $table->string('imagem');
