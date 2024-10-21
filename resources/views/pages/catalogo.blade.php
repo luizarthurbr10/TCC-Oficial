@@ -6,23 +6,25 @@
 @section('conteudo')
     <section>
         <h1>Catálogo de Produtos</h1>
-        <div class="row g-4 alinhamentoDiv">
-            @foreach ($produto as $item)
-            <div class="col-md-3">
-                    <div class="cardCatalogo card card">
-                        <div class="gambiarraImg">
-                            <img src="/storage/images/{{ $item->imagem }}" class="card__imagem card-img-top form-control" alt="Imagem 1">
-                        </div>
-                        <div class="card__body card-body">
-                            <h5 class="card__nome">{{ $item->nome }}</h5>
-                            <div class="divCard__item">
-                                <p class="card__item">R$ {{$item->valor}}</p>
-                                <p class="card__item--menor"><b>Descrição: </b>{{$item->descricao}}</p>
-                            </div>   
+        <div class="container p-3 alinhamentoDiv">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                @foreach ($produto as $item)
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="/storage/images/{{ $item->imagem }}" height="360" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card__nome">{{ $item->nome }}</h5>
+                                <p class="card-text">Descrição: {{ $item->descricao }}</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text card__precoPromocao">R$ {{ $item->valor }}</p>
+                                <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
+                            </div>
                         </div>
                     </div>
+                @endforeach
+
             </div>
-            @endforeach
         </div>
     </section>
 @endsection

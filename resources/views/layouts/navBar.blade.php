@@ -26,10 +26,8 @@
                     <span class="nav__link bordas link-light p-3">Bem-Vindo(a) - {{ Auth::user()->name }}!</span>
                     <form class="p-3" action="logout" method="post">
                         @csrf
-                        <li class="nav-item">
                             <a href="#" class="nav__link bordas link-light p-3"
                                 onclick="event.preventDefault();this.closest('form').submit();">Sair</a>
-                        </li>
                     </form>
                 @endauth
             </div>

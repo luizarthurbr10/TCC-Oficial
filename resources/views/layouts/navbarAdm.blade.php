@@ -18,10 +18,16 @@
             <div class="navSecundario__Itens row justify-content-center">
                 <div class="col-12 col-md d-flex justify-content-around">
                     <a href="/" class="nav__link--SemBorda link-light">Acessar Site</a>
-                    <a href="{{route('cadprodutos')}}" class="nav__link--SemBorda link-light">Cadastrar Produto</a>
-                    <a href="{{route('categorias')}}" class="nav__link--SemBorda link-light">Gerenciar Categorias</a>
-                    <a href="{{route('fornecedores')}}" class="nav__link--SemBorda link-light">Gerenciar Fornecedores</a>
-                    <a href="{{route('consultar')}}" class="nav__link--SemBorda link-light">Consultar Produtos</a>
+                    <a href="{{ route('cadprodutos') }}" class="nav__link--SemBorda link-light">Cadastrar Produto</a>
+                    <a href="{{ route('categorias') }}" class="nav__link--SemBorda link-light">Gerenciar Categorias</a>
+                    <a href="{{ route('fornecedores') }}" class="nav__link--SemBorda link-light">Gerenciar
+                        Fornecedores</a>
+                    <a href="{{ route('consultar') }}" class="nav__link--SemBorda link-light">Consultar Produtos</a>
+                    <form class="mt-1" action="logout" method="post">
+                        @csrf
+                            <a href="#" class="nav__link--SemBorda link-light"
+                                onclick="event.preventDefault();this.closest('form').submit();">Sair</a>
+                    </form>
                 </div>
             </div>
         </div>

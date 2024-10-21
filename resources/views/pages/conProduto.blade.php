@@ -43,7 +43,7 @@
                         </td>
                         <td>
                             <a href="alterar/{{ $item->id }}" class="btn btn-warning">Alterar</a>
-                            <a href="deletar/{{ $item->id }}" class="btn btn-danger mt-2">Deletar</a>
+                            <a href="deletar/{{ $item->id }}" class="btn btn-danger">Deletar</a>
                         </td>
                     </tr>
                 @endforeach
