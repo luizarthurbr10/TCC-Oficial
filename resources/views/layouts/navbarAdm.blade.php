@@ -9,7 +9,7 @@
             </div>
             <div class="gambiarra01 col-12 col-md-1 text-center text-md-right p-3">
                 <a href="">
-                    <label for="">Bem Vindo(a) lalala</label>
+                    <label for="">Bem Vindo(a) - {{ Auth::user()->name }}!</label>
                 </a>
             </div>
         </div>
@@ -17,7 +17,7 @@
         <div class="navSecundario alinhamentoDiv">
             <div class="navSecundario__Itens row justify-content-center">
                 <div class="col-12 col-md d-flex justify-content-around">
-                    <a href="" class="nav__link--SemBorda link-light">Acessar Site</a>
+                    <a href="/" class="nav__link--SemBorda link-light">Acessar Site</a>
                     <a href="{{route('cadprodutos')}}" class="nav__link--SemBorda link-light">Cadastrar Produto</a>
                     <a href="{{route('categorias')}}" class="nav__link--SemBorda link-light">Gerenciar Categorias</a>
                     <a href="{{route('fornecedores')}}" class="nav__link--SemBorda link-light">Gerenciar Fornecedores</a>
