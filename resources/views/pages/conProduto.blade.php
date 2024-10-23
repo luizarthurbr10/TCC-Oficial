@@ -42,7 +42,7 @@
                             <img src="/storage/images/{{ $item->imagem }}" width="100" />
                         </td>
                         <td>
-                            <a href="alterar/{{ $item->id }}" class="btn btn-warning">Alterar</a>
+                            <a href="alterarproduto/{{ $item->id }}" class="btn btn-warning">Alterar</a>
                             <a href="deletar/{{ $item->id }}" class="btn btn-danger">Deletar</a>
                         </td>
                     </tr>

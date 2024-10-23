@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Categoria;
+use App\Models\Validacao;
+
 use Illuminate\Http\Request;
 
 class CategoriaController extends Controller
@@ -17,8 +19,8 @@ class CategoriaController extends Controller
         $categoria->save();
 
         return back();
-    }
-    
+    }   
+
     // Função para Consultar Categoria
     public function consultar(){
         $categoria = Categoria::all();

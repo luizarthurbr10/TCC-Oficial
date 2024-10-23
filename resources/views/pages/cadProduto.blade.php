@@ -40,7 +40,7 @@
                 <select name="categoria" class="form-select" aria-label="Default select example">
                     <option selected>Escolher Categoria</option>
                     @foreach ($categoria as $item)
-                        <option value="{{$item->idCategoria}}">{{$item->nomeCategoria}}</option>
+                        <option value="{{ $item->idCategoria }}">{{ $item->nomeCategoria }}</option>
                     @endforeach
                 </select>
             </div>
@@ -50,7 +50,7 @@
                 <select name="fornecedor" class="form-select" aria-label="Default select example">
                     <option selected>Escolher Fornecedor</option>
                     @foreach ($fornecedor as $item)
-                        <option value="{{$item->idFornecedor}}">{{$item->nomeFornecedor}}</option>
+                        <option value="{{ $item->idFornecedor }}">{{ $item->nomeFornecedor }}</option>
                     @endforeach
                 </select>
             </div>
@@ -62,6 +62,7 @@
             <button type="submit" class="botaoCadastrar mt-3">
                 {{ isset($produto) ? 'Alterar' : 'Cadastrar' }}
             </button>
+
         </form>
 
     </div>

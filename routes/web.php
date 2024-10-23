@@ -29,7 +29,7 @@ Route::get('catalogo',[ProdutoController::class,'catalogo']) ->name('catalogo');
 
 Route::get('deletar/{id}',[ProdutoController::class,'deletar']) ->name('deletar');
 
-Route::get('alterar/{id}',[ProdutoController::class,'alterar']) ->name('alterarproduto');
+Route::get('alterarproduto/{id}',[ProdutoController::class,'alterarproduto'])->name('alterarproduto');
 
 Route::get('/',[ProdutoController::class,'home'])->name('home');
 
@@ -51,4 +51,13 @@ Route::get('deletar/{id}',[FornecedorController::class,'deletar']) ->name('delet
 
 Route::get('alterar/{id}',[FornecedorController::class,'alterar']) ->name('alterar');
 
-Route::middleware(['auth:sanctum', config('jetstream.auth_session'),'verified', ])->group(function () { Route::get('/dashboard', function () { return view('dashboard'); })->name('dashboard');});
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'),'verified', ])->group(function () { Route::get('/dashboard', function () 
+    {
+        if(session('nivel')==='admin'){
+            return view('pages.homeAdm');
+        }
+        if(session('nivel')==='user'){
+            return view('home');
+        }    
+
+    })->name('dashboard');});

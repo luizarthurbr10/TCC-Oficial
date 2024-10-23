@@ -16,8 +16,8 @@
                                 <h5 class="card-title card__nome">{{ $item->nome }}</h5>
                                 <p class="card-text">Descrição: {{ $item->descricao }}</p>
                             </div>
-                            <div class="card-body">
-                                <p class="card-text card__precoPromocao">R$ {{ $item->valor }}</p>
+                            <div class="card-body02">
+                                <p class="card-text card__preco">R$ {{ $item->valor }}</p>
                                 <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
                             </div>
                         </div>

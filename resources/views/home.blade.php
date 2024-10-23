@@ -32,60 +32,52 @@
     {{-- CARDS PROMOÇÃO --}}
     <section>
         <h1>Ofertas do Mês</h1>
-        <div class="container mt-3">
-            <div class="row g-4">
-                <div class="col-md-3">
-                    <div class="card card">
-                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
-                        <div class="card__body card-body">
-                            <h5 class="card__nome">Nome do Produto</h5>
-                            <div>
-                                <p class="card__precoOriginal">R$ 00,00</p>
-                                <p class="card__precoPromocao">R$ 00,00</p>
-                                <p class="card__parcelas">Parcelas</p>
+        <div class="container p-3 alinhamentoDiv">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                {{-- @foreach ($produto as $item) --}}
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src={{--"/storage/images/{{ $item->imagem }}" --}} height="360" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card__nome">{{--{{ $item->nome }} --}}</h5>
+                                <p class="card-text">Descrição: {{--{{ $item->descricao }} --}}</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text card__preco">R$ {{--{{ $item->valor }} --}}</p>
+                                <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card card">
-                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
-                        <div class="card__body card-body">
-                            <h5 class="card__nome">Nome do Produto</h5>
-                            <div>
-                                <p class="card__precoOriginal">R$ 00,00</p>
-                                <p class="card__precoPromocao">R$ 00,00</p>
-                                <p class="card__parcelas">Parcelas</p>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src={{--"/storage/images/{{ $item->imagem }}" --}} height="360" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card__nome">{{--{{ $item->nome }} --}}</h5>
+                                <p class="card-text">Descrição: {{--{{ $item->descricao }} --}}</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text card__preco">R$ {{--{{ $item->valor }} --}}</p>
+                                <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card card">
-                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
-                        <div class="card__body card-body">
-                            <h5 class="card__nome">Nome do Produto</h5>
-                            <div>
-                                <p class="card__precoOriginal">R$ 00,00</p>
-                                <p class="card__precoPromocao">R$ 00,00</p>
-                                <p class="card__parcelas">Parcelas</p>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src={{--"/storage/images/{{ $item->imagem }}" --}} height="360" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card__nome">{{--{{ $item->nome }} --}}</h5>
+                                <p class="card-text">Descrição: {{--{{ $item->descricao }} --}}</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text card__preco">R$ {{--{{ $item->valor }} --}}</p>
+                                <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card card">
-                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
-                        <div class="card__body card-body">
-                            <h5 class="card__nome">Nome do Produto</h5>
-                            <div>
-                                <p class="card__precoOriginal">R$ 00,00</p>
-                                <p class="card__precoPromocao">R$ 00,00</p>
-                                <p class="card__parcelas">Parcelas</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    
+                    
+                {{-- @endforeach --}}
+
             </div>
         </div>
     </section>
@@ -140,60 +132,52 @@
     {{-- CARDS MAIS PROCURADOS --}}
     <section>
         <h1>Os Mais Procurados</h1>
-        <div class="container mt-3">
-            <div class="row g-4">
-                <div class="col-md-3">
-                    <div class="card card">
-                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
-                        <div class="card__body card-body">
-                            <h5 class="card__nome">Nome do Produto</h5>
-                            <div>
-                                <p class="card__precoOriginal">R$ 00,00</p>
-                                <p class="card__precoPromocao">R$ 00,00</p>
-                                <p class="card__parcelas">Parcelas</p>
+        <div class="container p-3 alinhamentoDiv">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                {{-- @foreach ($produto as $item) --}}
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src={{--"/storage/images/{{ $item->imagem }}" --}} height="360" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card__nome">{{--{{ $item->nome }} --}}</h5>
+                                <p class="card-text">Descrição: {{--{{ $item->descricao }} --}}</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text card__preco">R$ {{--{{ $item->valor }} --}}</p>
+                                <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card card">
-                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
-                        <div class="card__body card-body">
-                            <h5 class="card__nome">Nome do Produto</h5>
-                            <div>
-                                <p class="card__precoOriginal">R$ 00,00</p>
-                                <p class="card__precoPromocao">R$ 00,00</p>
-                                <p class="card__parcelas">Parcelas</p>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src={{--"/storage/images/{{ $item->imagem }}" --}} height="360" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card__nome">{{--{{ $item->nome }} --}}</h5>
+                                <p class="card-text">Descrição: {{--{{ $item->descricao }} --}}</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text card__preco">R$ {{--{{ $item->valor }} --}}</p>
+                                <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card card">
-                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
-                        <div class="card__body card-body">
-                            <h5 class="card__nome">Nome do Produto</h5>
-                            <div>
-                                <p class="card__precoOriginal">R$ 00,00</p>
-                                <p class="card__precoPromocao">R$ 00,00</p>
-                                <p class="card__parcelas">Parcelas</p>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src={{--"/storage/images/{{ $item->imagem }}" --}} height="360" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card__nome">{{--{{ $item->nome }} --}}</h5>
+                                <p class="card-text">Descrição: {{--{{ $item->descricao }} --}}</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text card__preco">R$ {{--{{ $item->valor }} --}}</p>
+                                <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card card">
-                        <img src="https://via.placeholder.com/300x200" class="card__imagem card-img-top" alt="Imagem 1">
-                        <div class="card__body card-body">
-                            <h5 class="card__nome">Nome do Produto</h5>
-                            <div>
-                                <p class="card__precoOriginal">R$ 00,00</p>
-                                <p class="card__precoPromocao">R$ 00,00</p>
-                                <p class="card__parcelas">Parcelas</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    
+                    
+                {{-- @endforeach --}}
+
             </div>
         </div>
 
