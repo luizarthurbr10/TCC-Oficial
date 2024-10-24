@@ -1,5 +1,8 @@
 body {
     font-family: Cambria;
+    background: #f4f4f4;
+
+
 }
 
 a {
@@ -34,5 +37,22 @@ a {
 }
 
 .lalala{
-    width: 80%;
+    width: 50%;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    background: white;
+}
+
+.tabela{
+    width: 70%;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    background: white;
+}
+
+.tituloTabela{
+    background-color: rgb(11,55,102);
+    color: white;
 }

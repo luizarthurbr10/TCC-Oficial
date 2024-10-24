@@ -1,4 +1,4 @@
-@include('layouts.head')
+@include('layouts.headAdm')
 @include('layouts.header')
 @include('layouts.navBarAdm')
 

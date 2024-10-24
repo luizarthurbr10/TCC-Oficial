@@ -3,7 +3,7 @@
     $carousel = 0;
 @endphp
 @section('conteudo')
-    <div class="lalala container mt-4">
+    <div class="tabela container mt-4">
         <div class="headAdm">
             <h2>Consultar Produtos</h2>
             <button type="submit" class="botaoVoltar">
@@ -12,7 +12,7 @@
         </div>
         <table class="container table table-striped mt-2">
             <thead>
-                <tr>
+                <tr class="tituloTabela">
                     <th>Id</th>
                     <th>Nome</th>
                     <th>Valor</th>

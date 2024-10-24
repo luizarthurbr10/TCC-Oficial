@@ -11,6 +11,10 @@ Route::get('/homeAdministrador', function () { return view('pages.homeAdm'); })-
 
 Route::get('/catalogo', function () { return view('pages.catalogo'); })->name('catalogo');
 
+Route::get('/produto', function () { return view('pages.produto'); })->name('produto');
+
+Route::get('detalhe/{id}',[ProdutoController::class,'detalhe'])->name('detalhe');
+
 // Route::get('/cadprodutos', function () { return view('pages.cadProduto'); })->name('cadproduto');
 Route::get('/cadprodutos',[ProdutoController::class,'cadprodutos']) ->name('cadprodutos');
 
@@ -61,3 +65,6 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'),'verified', 
         }    
 
     })->name('dashboard');});
+
+    Route::get('cart/{id}', [ProdutoController::class,'cart'])->name('cart');//Botao comprar
+

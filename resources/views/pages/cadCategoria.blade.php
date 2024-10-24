@@ -4,22 +4,22 @@
 @endphp
 
 @section('conteudo')
-<div class="lalala container mt-4">
+<div class="lalala container">
     <div class="headAdm">
         <h2>Cadastrar Categoria</h2>
         <button type="submit" class="botaoVoltar">
             <a href="{{route('homeAdministrador')}}">Voltar</a>
         </button>
     </div>
-    <form action="categoria/create" method="POST">
+    <form class="mt-2" action="categoria/create" method="POST">
     @csrf
         <div class="mb-3">
-            <label class="form-label">Categoria:</label>
-            <input name="nomeCategoria" type="text" class="form-control">
+            {{-- <label class="form-label">Categoria:</label> --}}
+            <input placeholder="Nome da Categoria" name="nomeCategoria" type="text" class="form-control">
         </div>
         <div class="mb-3">
-            <label class="form-label">Descrição:</label>
-            <input name="descricaoCategoria" type="text" class="form-control">
+            {{-- <label class="form-label">Descrição:</label> --}}
+            <input placeholder="Descrição da Categoria" name="descricaoCategoria" type="text" class="form-control">
         </div>
         <button type="submit" class="botaoCadastrar mt-2">
             {{ isset($categoria) ? 'Cadastrar': 'Alterar' }}

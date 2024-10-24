@@ -1,0 +1,137 @@
+.containerProduto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.image-section {
+    flex: 1;
+    max-width: 55%;
+    padding-right: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.product-description button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.info-section {
+    flex: 1;
+    max-width: 40%;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+
+.info-section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.price {
+    font-size: 28px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.quantity {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.quantity button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    align-items: center;
+}
+
+.quantity input {
+    width: 100%;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+}
+
+.buy-button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffa60093;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px;
+    text-decoration: none;
+}
+
+.pickup-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.pickup-info .highlight {
+    font-weight: bold;
+    color: #FFA500;
+}
+
+.accordion{
+    width: 60.2%;
+}
+
+.destaque{
+    background: #ffa60093;
+}
+
+.containerDescricao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 17.3%;
+    padding: 20px;
+    max-width: 1200px;
+    
+}
+
+.accordion-item{
+    border: none;
+    
+}
+
+.accordion-header{
+    background: #f4f4f4;
+    
+}
+
+@media (max-width: 768px) {
+    .containerProduto {
+        flex-direction: column;
+    }
+
+    .image-section, .info-section {
+        max-width: 100%;
+        padding: 0;
+        border: none;
+    }
+
+    .info-section {
+        margin-top: 20px;
+    }
+}

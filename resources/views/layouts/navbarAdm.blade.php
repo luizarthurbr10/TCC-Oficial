@@ -3,7 +3,7 @@
     <nav>
         <div class="navPrincipal row text-center">
             <div class="col-12 col-md-2 text-center text-md-left">
-                <a href="">
+                <a href="{{route('homeAdministrador')}}">
                     <img src="assets/img/logo/logo.png" class="logo" alt="">
                 </a>
             </div>

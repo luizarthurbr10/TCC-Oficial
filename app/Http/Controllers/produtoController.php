@@ -84,4 +84,11 @@ class ProdutoController extends Controller
         $fornecedor = Fornecedor::all();
         return view('pages.cadProduto', ['categoria' => $categoria, 'fornecedor' => $fornecedor]);
     }
+
+    // mostrar detalhes do produto
+    public function detalhe($id)
+    {
+        $produto = Produto::find($id);
+        return view('pages.detalheProduto', ['produto' => $produto]);
+    }
 }

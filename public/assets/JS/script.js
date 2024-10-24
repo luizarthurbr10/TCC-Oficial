@@ -11,5 +11,14 @@ new Glider(document.querySelector('.glider'), {
     }
 });
 
+function valortotal(){
+
+    let qtd = document.getElementById('qtd').value;
+    let vunit = document.getElementById('vunit').value;
+
+    document.getElementById('vtotal').value = qtd * vunit;
+
+}
+
 
 

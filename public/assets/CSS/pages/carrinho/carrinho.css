@@ -1,104 +1,96 @@
-.product-container {
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
-    background-color: #f7f7f7;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 1500px;
-    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 90%;
 }
 
-.product-info, .order-info, .pickup-info, .action-buttons {
-    flex: 1 1 220px;
-    margin: 10px;
+.product-info, .order-info, .store-info {
+    padding: 10px;
+    border-right: 1px solid #ccc;
 }
 
 .product-info {
+    flex: 1;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    min-width: 250px;
 }
 
-.product-image {
-    width: 100px;
-    height: 100px;
+.product-info img {
+    max-width: 100px;
     margin-right: 10px;
 }
 
-.product-details {
-    flex-grow: 1;
-}
-
-.product-name {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.product-name span {
-    font-weight: normal;
-    font-size: 14px;
-}
-
-.product-price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-}
-
-.installments {
-    font-size: 12px;
-    color: #888;
-}
-
-.order-info p, .pickup-info p {
-    margin: 5px 0;
-    font-size: 14px;
-}
-
-.pickup-info .status {
-    background-color: #ffcc00;
-    padding: 2px 5px;
-    border-radius: 5px;
-    color: #000;
-    font-weight: bold;
-}
-
-.action-buttons {
+.order-info {
+    flex: 1;
+    min-width: 200px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
-button {
-    padding: 10px;
+.store-info {
+    flex: 1;
+    min-width: 200px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textoCinza{
+    color: #a6a6a6;
+}
+/* testando */
+.button-with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #ffa60093;
+    color: black;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+    width: 200px;
+    width: 100%;
+    margin-left: 10px;
 }
 
-.buy-button {
-    background-color: #007bff;
-    color: #fff;
+.button-with-icon img {
+    position: absolute;
+    left: 10px;
+    width: 20px;
 }
 
-.access-button {
-    background-color: #28a745;
-    color: #fff;
+
+.textoBotao{
+    margin-left: 20px;
 }
 
-.delete-button {
-    background-color: #dc3545;
-    color: #fff;
-}
+
 
 @media (max-width: 768px) {
-    .product-container {
+    .container {
         flex-direction: column;
     }
 
-    .product-info {
-        justify-content: center;
+    .product-info, .order-info, .store-info {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .actions {
+        flex-direction: row;
+        justify-content: space-around;
     }
 }

@@ -4,22 +4,22 @@
 @endphp
 
 @section('conteudo')
-<div class="lalala container mt-4">
+<div class="lalala container">
     <div class="headAdm">
         <h2>Cadastrar Fornecedor</h2>
         <button type="submit" class="botaoVoltar">
             <a href="{{route('homeAdministrador')}}">Voltar</a>
         </button>
     </div>
-    <form action="fornecedor/create" method="POST">
+    <form class="mt-2" action="fornecedor/create" method="POST">
     @csrf
         <div class="mb-3">
-            <label class="form-label">Fornecedor:</label>
-            <input name="nomeFornecedor" type="text" class="form-control">
+            {{-- <label class="form-label">Fornecedor:</label> --}}
+            <input placeholder="Nome do Fornecedor" name="nomeFornecedor" type="text" class="form-control">
         </div>
         <div class="mb-3">
-            <label class="form-label">Descrição:</label>
-            <input name="descricaoFornecedor" type="text" class="form-control">
+            {{-- <label class="form-label">Descrição:</label> --}}
+            <input placeholder="Descrição do Fornecedor" name="descricaoFornecedor" type="text" class="form-control">
         </div>
         <button type="submit" class="botaoCadastrar mt-2">
             {{ isset($fornecedor) ? 'Cadastrar': 'Alterar' }}
