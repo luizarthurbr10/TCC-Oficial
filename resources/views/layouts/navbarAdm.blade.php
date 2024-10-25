@@ -9,7 +9,7 @@
             </div>
             <div class="gambiarra01 col-12 col-md-1 text-center text-md-right p-3">
                 <a href="">
-                    <label for="">Bem Vindo(a) - {{ Auth::user()->name }}!</label>
+                    <label for="">Bem Vindo(a) - <strong>{{ Auth::user()->name }}</strong>!</label>
                 </a>
             </div>
         </div>

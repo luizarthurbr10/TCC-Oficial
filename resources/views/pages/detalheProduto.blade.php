@@ -20,7 +20,7 @@
                     <div class="col quantity">
                         <input class="p-2" type="number" id="quantity" value="1" min="1" onchange="valortotal()">
                     </div>
-                    <div class="col-sm-9 ">
+                    <div class="col-sm-9">
                         <a href="/cart/{{ $produto->id }}" class="buy-button">Comprar</a>
                     </div>
                 </div>

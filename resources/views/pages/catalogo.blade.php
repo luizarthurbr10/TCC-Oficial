@@ -18,7 +18,8 @@
                             </div>
                             <div class="card-body02">
                                 <p class="card-text card__preco">R$ {{ $item->valor }}</p>
-                                <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
+                                <a href="cart/{{$item->id}}" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
+                                <a href="detalhe/{{ $item->id }}" class="botaoVoltar mt-1 p-2">Ver Produto</a>
                             </div>
                         </div>
                     </div>

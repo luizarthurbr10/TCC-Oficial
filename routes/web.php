@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProdutoController; 
+use App\Http\Controllers\produtoController; 
 use App\Http\Controllers\CategoriaController; 
 use App\Http\Controllers\FornecedorController; 
 
@@ -13,10 +13,10 @@ Route::get('/catalogo', function () { return view('pages.catalogo'); })->name('c
 
 Route::get('/produto', function () { return view('pages.produto'); })->name('produto');
 
-Route::get('detalhe/{id}',[ProdutoController::class,'detalhe'])->name('detalhe');
+Route::get('detalhe/{id}',[produtoController::class,'detalhe'])->name('detalhe');
 
 // Route::get('/cadprodutos', function () { return view('pages.cadProduto'); })->name('cadproduto');
-Route::get('/cadprodutos',[ProdutoController::class,'cadprodutos']) ->name('cadprodutos');
+Route::get('/cadprodutos',[produtoController::class,'cadprodutos']) ->name('cadprodutos');
 
 Route::get('/fornecedores', function () { return view('pages.cadFornecedor'); })->name('fornecedores');
 
@@ -25,17 +25,17 @@ Route::get('/categorias', function () { return view('pages.cadCategoria'); })->n
 Route::get('/carrinho', function () { return view('pages.carrinho'); })->name('carrinho');
 
 // ROTAS PRODUTO
-Route::post('produtos/create',[ProdutoController::class,'create']) ->name('createproduto');
+Route::post('produtos/create',[produtoController::class,'create']) ->name('createproduto');
 
-Route::get('conproduto',[ProdutoController::class,'consultar']) ->name('consultar');
+Route::get('conproduto',[produtoController::class,'consultar']) ->name('consultar');
 
-Route::get('catalogo',[ProdutoController::class,'catalogo']) ->name('catalogo');
+Route::get('catalogo',[produtoController::class,'catalogo']) ->name('catalogo');
 
-Route::get('deletar/{id}',[ProdutoController::class,'deletar']) ->name('deletar');
+Route::get('deletar/{id}',[produtoController::class,'deletar']) ->name('deletar');
 
-Route::get('alterarproduto/{id}',[ProdutoController::class,'alterarproduto'])->name('alterarproduto');
+Route::get('alterarproduto/{id}',[produtoController::class,'alterarproduto'])->name('alterarproduto');
 
-Route::get('/',[ProdutoController::class,'home'])->name('home');
+Route::get('/',[produtoController::class,'home'])->name('home');
 
 // ROTAS CATEGORIA  
 Route::post('categoria/create',[CategoriaController::class,'create']) ->name('createcategoria');
@@ -66,5 +66,5 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'),'verified', 
 
     })->name('dashboard');});
 
-    Route::get('cart/{id}', [ProdutoController::class,'cart'])->name('cart');//Botao comprar
+    Route::get('cart/{id}', [produtoController::class,'cart'])->name('cart');//Botao comprar
 

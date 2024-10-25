@@ -1,4 +1,6 @@
 @import '../pages/cadProduto/cadProduto.css';
 @import '../pages/homeAdm/homeAdm.css';
 @import 'navBar.css';
+@import 'tabela.css';
+@import '../pages/home/partials.css/carousel.css';
 

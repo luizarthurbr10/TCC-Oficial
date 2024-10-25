@@ -8,7 +8,7 @@
     <section>
         <h1>Meu Carrinho</h1>
         @foreach (session('carrinho', []) as $item)
-        <div class="container">
+        <div class="container containerCarrinho">
             <div class="product-info">
                 <img src="product-image.png" alt="Imagem do Produto">
                 <div>
@@ -34,21 +34,22 @@
             </div>
 
             <div class="actions">
+                {{-- <button class="button-with-icon">
+                    <img src="assets/img/icons/carrinho.svg" alt="">
+                    <a href="" class="textoBotao">Comprar Produto</a>
+                </button> --}}
                 <button class="button-with-icon">
-                    <img src="assets/img/icons/carrinho.svg" alt=""> <!-- Substitua pelo ícone desejado -->
-                    <label class="textoBotao" for="">Comprar Produto</label>
+                    <img src="assets/img/icons/caixa.svg" alt="">
+                    <a href="" class="textoBotao">Ver Produto</a>
                 </button>
                 <button class="button-with-icon">
-                    <img src="assets/img/icons/caixa.svg" alt=""> <!-- Substitua pelo ícone desejado -->
-                    <label class="textoBotao" for="">Ver Produto</label>
-                </button>
-                <button class="button-with-icon">
-                    <img src="assets/img/icons/lixo.svg" alt=""> <!-- Substitua pelo ícone desejado -->
+                    <img src="assets/img/icons/lixo.svg" alt="">
                     <label class="textoBotao" for="">Excluir Produto</label>
                 </button>
-                
             </div>
         </div>
         @endforeach
+
+        
     </section>
 @endsection

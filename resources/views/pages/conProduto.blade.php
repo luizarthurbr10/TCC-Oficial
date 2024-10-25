@@ -3,14 +3,14 @@
     $carousel = 0;
 @endphp
 @section('conteudo')
-    <div class="tabela container mt-4">
+    <div class="containerTabela container mt-4">
         <div class="headAdm">
             <h2>Consultar Produtos</h2>
             <button type="submit" class="botaoVoltar">
                 <a href="{{ route('homeAdministrador') }}">Voltar</a>
             </button>
         </div>
-        <table class="container table table-striped mt-2">
+        <table class="tabela container table table-striped mt-2">
             <thead>
                 <tr class="tituloTabela">
                     <th>Id</th>

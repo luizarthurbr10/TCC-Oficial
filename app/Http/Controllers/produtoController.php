@@ -5,9 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Categoria;
 use App\Models\Produto;
 use App\Models\Fornecedor;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 
-class ProdutoController extends Controller
+class produtoController extends Controller
 {
     // função para cadastrar produto
     public function create(Request $request)
@@ -90,5 +91,64 @@ class ProdutoController extends Controller
     {
         $produto = Produto::find($id);
         return view('pages.detalheProduto', ['produto' => $produto]);
+    }
+
+    // FUNÇÕES DO CARRINHO
+    // Adicionar Produto
+    public function cart($id)
+    {
+        $produto = Produto::find($id);
+        $carrinho = Session::get('carrinho', []);
+
+        if (isset($carrinho[$id])) {
+            $carrinho[$id]['qtd']++;
+        } else {
+            $carrinho[$id] = [
+                'id' => $produto->id,
+                'nome' => $produto->nome,
+                'valor' => $produto->valor,
+                'descricao' => $produto->descricao,
+                'imagem' => $produto->imagem,
+                'qtd' => 1
+            ];
+        }
+
+        $sum_qtd = 0;
+        $sum_valor = 0;
+
+        foreach ($carrinho as $item) {
+            $sum_qtd += $item['qtd'];
+            $sum_valor += $item['valor'] * $item['qtd'];
+        }
+
+        Session::put('carrinho', $carrinho);
+        Session::put('sum_qtd', $sum_qtd);
+        Session::put('sum_valor', $sum_valor);
+
+        //return view('pages.cart', compact('carrinho', 'sum_qtd', 'sum_valor'));
+        return back();
+    }
+
+    
+    public function cartAdd($id)
+    {
+        // Obtém os dados do carrinho da sessão
+        $carrinho = session()->get('carrinho', []);
+        $sum_qtd = session()->get('sum_qtd');
+        $sum_valor = session()->get('sum_valor');
+
+        if (isset($carrinho[$id])) {
+            // Aumenta a quantidade do item em 1
+            $carrinho[$id]['qtd'] += 1;
+
+            // Atualiza a quantidade total e o valor total na sessão
+            session()->put('sum_qtd', $sum_qtd + 1);
+            session()->put('sum_valor', $sum_valor + $carrinho[$id]['valor']);
+
+            // Salva as alterações no carrinho na sessão
+            session()->put('carrinho', $carrinho);
+        }
+
+        return back();
     }
 }
