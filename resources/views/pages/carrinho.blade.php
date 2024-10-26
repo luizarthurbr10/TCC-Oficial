@@ -25,13 +25,13 @@
                 <p>Subtotal: <span class="textoCinza">R$ 00,00</span></p>
             </div>
 
-            <div class="store-info">
+            {{-- <div class="store-info">
                 <p>Retirada na loja: <span style="color: orange;">OFF</span></p>
                 <p>Cidade/Estado: <span class="textoCinza">Cuiabá-MT</span></p>
                 <p>CEP: <span class="textoCinza">00000-000</span></p>
                 <p>Bairro: <span class="textoCinza">Jardim Bela Vista, Q 45 C 12</span></p>
                 <p>Complemento: <span class="textoCinza">Rua das Flores, próximo ao posto Jumbo</span></p>
-            </div>
+            </div> --}}
 
             <div class="actions">
                 {{-- <button class="button-with-icon">
@@ -50,6 +50,19 @@
         </div>
         @endforeach
 
-        
+        <div class="containerDetalhes container">
+            <div class="info">
+                <p><strong>Valor Total:</strong> R$ 00,00</p>
+                <p><strong>Cidade/Estado:</strong> <label for="" class="textoCinza">Cuiabá-MT</label></p>
+                <p><strong>CEP:</strong> <label for="" class="textoCinza">00000-000</label></p>
+                <p><strong>Bairro e Logradouro:</strong><label for="" class="textoCinza"> Parque Cuiabá</label></p>
+                <p><strong>Complemento e Referencia:</strong> <label for="" class="textoCinza">Próximo ao Bom Jesus</label></p>
+            </div>
+            <div class="actionsDetalhes">
+                <button class="btn finalizar">Finalizar Pedido</button>
+                <button class="btn orcamento">Emitir Orçamento</button>
+                <button class="btn cancelar">Cancelar Pedido</button>
+            </div>
+        </div>
     </section>
 @endsection

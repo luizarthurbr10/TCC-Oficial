@@ -5,6 +5,8 @@
     border: 1px solid #ccc;
     padding: 10px;
     max-width: 90%;
+    background-color: #fff;
+    margin-bottom: 20px;
 }
 
 .product-info, .order-info, .store-info {
@@ -41,29 +43,31 @@
 .actions {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    gap: 20px;
+    justify-content: center;
 }
 
 .textoCinza{
     color: #a6a6a6;
 }
-/* testando */
+
 .button-with-icon {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 10px 20px;
-    background-color: #ffa60093;
-    color: black;
+    text-align: center;
     border: none;
     cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
     font-size: 16px;
-    text-align: center;
-    width: 200px;
     width: 100%;
     margin-left: 10px;
+    border-radius: 5px;
+    background-color: #ffa60093;
+    color: black;
 }
 
 .button-with-icon img {
@@ -92,5 +96,75 @@
     .actions {
         flex-direction: row;
         justify-content: space-around;
+    }
+}
+
+/* CONTAINER DETALHES */
+.containerDetalhes {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 90%;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.info {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+
+}
+
+.info p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.actionsDetalhes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    margin-left: 20px;
+
+}
+
+.btn {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 70%;
+    
+}
+
+.finalizar {
+    background-color: #003366;
+}
+
+.orcamento {
+    background-color: #003366;
+}
+
+.cancelar {
+    background-color: #fdd835;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .info {
+        padding-right: 0;
+        margin-bottom: 20px;
     }
 }

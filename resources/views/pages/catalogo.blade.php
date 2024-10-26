@@ -14,12 +14,8 @@
                             <img src="/storage/images/{{ $item->imagem }}" height="360" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title card__nome">{{ $item->nome }}</h5>
-                                <p class="card-text">Descrição: {{ $item->descricao }}</p>
-                            </div>
-                            <div class="card-body02">
                                 <p class="card-text card__preco">R$ {{ $item->valor }}</p>
-                                <a href="cart/{{$item->id}}" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
-                                <a href="detalhe/{{ $item->id }}" class="botaoVoltar mt-1 p-2">Ver Produto</a>
+                                <p class="card-text">Descrição: {{ $item->descricao }}</p>
                             </div>
                         </div>
                     </div>

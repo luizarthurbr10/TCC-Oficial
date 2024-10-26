@@ -19,20 +19,13 @@
 .card_text{
     text-align: justify;
     white-space: nowrap;       /* Impede que o texto quebre em várias linhas */
-  overflow: hidden;          /* Oculta o texto que excede o limite da div */
+    overflow: hidden;          /* Oculta o texto que excede o limite da div */
     text-overflow: ellipsis;
 }
 
 .card__body {
     overflow: hidden;
     /* Impede que o texto ultrapasse o limite do card */
-}
-
-.card__body02 {
-    /* overflow: hidden; */
-    /* Impede que o texto ultrapasse o limite do card */
-    position: fixed;
-    bottom: 0;
 }
 
 .card__nome {
@@ -43,6 +36,7 @@
 
 .card__preco {
     font-size: 25px;
+    font-weight: bold;
 }
 
 .card__parcelas {
