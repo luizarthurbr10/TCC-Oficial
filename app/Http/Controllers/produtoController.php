@@ -43,7 +43,8 @@ class produtoController extends Controller
     public function catalogo()
     {
         $produto = Produto::all();
-        return view('pages.catalogo', ['produto' => $produto]);
+        $categoria = Categoria::all();
+        return view('pages.catalogo', ['produto' => $produto, 'categoria' => $categoria]);
     }
 
     // Função para Deletar Produto
@@ -75,7 +76,8 @@ class produtoController extends Controller
     public function home()
     {
         $produto = Produto::all(); //SELECT * FROM produdto;
-        return view('home', ['produto' => $produto]);
+        $categoria = Categoria::all();
+        return view('home', ['produto' => $produto, 'categoria' => $categoria]);
     }
 
     // visualizar categorias no select

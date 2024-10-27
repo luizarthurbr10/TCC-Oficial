@@ -19,9 +19,9 @@
 
             <div class="col-12 col-md-4 p-3 d-flex justify-content-around">
                 <a href="/" class="nav__link bordas link-light p-3">Home</a>
-                <a href="{{ route('catalogo') }}" class="nav__link link-light p-3">Catálogo</a>
+                <a href="{{ route('catalogo') }}" class="bordas nav__link link-light p-3">Catálogo</a>
                 @guest
-                    <a href="login" class="nav__link link-light p-3">Entre ou Cadastre-se</a>
+                    <a href="login" class="nav__link bordas link-light p-3">Entre ou Cadastre-se</a>
                 @endguest
                 @auth
                     <span class="nav__link bordas link-light p-3">Bem-Vindo(a) - {{ Auth::user()->name }}!</span>
@@ -56,9 +56,9 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        {{-- @foreach ($categoria as $item)
+                        <li><a class="dropdown-item" href="#">{{$item->nomeCategoria}}</a></li>
+                        @endforeach --}}
                     </ul>
                 </div>
                 <div class="col-12 col-md d-flex justify-content-around">

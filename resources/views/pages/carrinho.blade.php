@@ -14,7 +14,6 @@
                     <div>
                         <h3>{{ $item['nome'] }}</h3>
                         <p>R$ {{ $item['valor'] }}</p>
-                        <p class="textoCinza">Ou em 5x sem juros de R$ 11,25</p>
                     </div>
                 </div>
 

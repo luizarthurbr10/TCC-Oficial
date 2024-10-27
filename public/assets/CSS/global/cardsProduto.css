@@ -82,6 +82,11 @@
     opacity: 0.8;
 }
 
+.textoCinza--tachado{
+    color: #a6a6a6;
+    text-decoration: line-through;
+}
+
 @media (max-width: 768px) {
     .product-card {
         max-width: 100%;

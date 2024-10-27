@@ -32,52 +32,82 @@
     {{-- CARDS PROMOÇÃO --}}
     <section>
         <h1>Ofertas do Mês</h1>
-        <div class="container p-3 alinhamentoDiv">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                {{-- @foreach ($produto as $item) --}}
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src={{--"/storage/images/{{ $item->imagem }}" --}} height="360" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card__nome">{{--{{ $item->nome }} --}}</h5>
-                                <p class="card-text">Descrição: {{--{{ $item->descricao }} --}}</p>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text card__preco">R$ {{--{{ $item->valor }} --}}</p>
-                                <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
-                            </div>
-                        </div>
+        <div class="containerCards">
+            <div class="cardProduto">
+                <div class="cardImg">
+                    <img src="" alt="Nome do Produto">
+                </div>
+                <div class="cardInfo">
+                    <h2 class="nomeProduto">Assento Almofadado Prime Branco</h2>
+                    <p class="textoCinza--tachado">R$ 80,35</p>
+                    <p class="precoProduto">R$ 56,25</p>
+                    <p class="textoCinza">Ou em 5x sem juros de 11,25</p>
+                    <div class="cardBotoes">
+                        <button class="botaoCard btn-VerMais">
+                            <a href="">Ver Mais</a>
+                        </button>
+                        <button class="botaoCard btn-AdicionarCarrinho">
+                            <a href="">Adicionar ao Carrinho</a>
+                        </button>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src={{--"/storage/images/{{ $item->imagem }}" --}} height="360" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card__nome">{{--{{ $item->nome }} --}}</h5>
-                                <p class="card-text">Descrição: {{--{{ $item->descricao }} --}}</p>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text card__preco">R$ {{--{{ $item->valor }} --}}</p>
-                                <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="cardProduto">
+                <div class="cardImg">
+                    <img src="" alt="Nome do Produto">
+                </div>
+                <div class="cardInfo">
+                    <h2 class="nomeProduto">Emborrachado fundo e acabamento 20kg</h2>
+                    <p class="textoCinza--tachado">R$ 268,90</p>
+                    <p class="precoProduto">R$ 242,01</p>
+                    <p class="textoCinza">Ou em 10x sem juros de 24,20</p>
+                    <div class="cardBotoes">
+                        <button class="botaoCard btn-VerMais">
+                            <a href="">Ver Mais</a>
+                        </button>
+                        <button class="botaoCard btn-AdicionarCarrinho">
+                            <a href="">Adicionar ao Carrinho</a>
+                        </button>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src={{--"/storage/images/{{ $item->imagem }}" --}} height="360" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card__nome">{{--{{ $item->nome }} --}}</h5>
-                                <p class="card-text">Descrição: {{--{{ $item->descricao }} --}}</p>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text card__preco">R$ {{--{{ $item->valor }} --}}</p>
-                                <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="cardProduto">
+                <div class="cardImg">
+                    <img src="" alt="Nome do Produto">
+                </div>
+                <div class="cardInfo">
+                    <h2 class="nomeProduto">Engate Passe Livre</h2>
+                    <p class="textoCinza--tachado">R$ 12,90</p>
+                    <p class="precoProduto">R$ 9,99</p>
+                    <p class="textoCinza">Ou em 2x sem juros de 4,99 </p>
+                    <div class="cardBotoes">
+                        <button class="botaoCard btn-VerMais">
+                            <a href="">Ver Mais</a>
+                        </button>
+                        <button class="botaoCard btn-AdicionarCarrinho">
+                            <a href="">Adicionar ao Carrinho</a>
+                        </button>
                     </div>
-                    
-                    
-                {{-- @endforeach --}}
-
+                </div>
+            </div>
+            <div class="cardProduto">
+                <div class="cardImg">
+                    <img src="" alt="Nome do Produto">
+                </div>
+                <div class="cardInfo">
+                    <h2 class="nomeProduto">Tinta piso Ciapiso 16L</h2>
+                    <p class="textoCinza--tachado">R$ 355,99</p>
+                    <p class="precoProduto">R$ 304,99</p>
+                    <p class="textoCinza">Ou em 6x sem juros de R$ 50,84</p>
+                    <div class="cardBotoes">
+                        <button class="botaoCard btn-VerMais">
+                            <a href="">Ver Mais</a>
+                        </button>
+                        <button class="botaoCard btn-AdicionarCarrinho">
+                            <a href="">Adicionar ao Carrinho</a>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -132,56 +162,84 @@
     {{-- CARDS MAIS PROCURADOS --}}
     <section>
         <h1>Os Mais Procurados</h1>
-        <div class="container p-3 alinhamentoDiv">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                {{-- @foreach ($produto as $item) --}}
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src={{--"/storage/images/{{ $item->imagem }}" --}} height="360" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card__nome">{{--{{ $item->nome }} --}}</h5>
-                                <p class="card-text">Descrição: {{--{{ $item->descricao }} --}}</p>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text card__preco">R$ {{--{{ $item->valor }} --}}</p>
-                                <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
-                            </div>
-                        </div>
+        <div class="containerCards">
+            <div class="cardProduto">
+                <div class="cardImg">
+                    <img src="" alt="Nome do Produto">
+                </div>
+                <div class="cardInfo">
+                    <h2 class="nomeProduto">Assento Almofadado Prime Branco</h2>
+                    <p class="textoCinza--tachado">R$ 80,35</p>
+                    <p class="precoProduto">R$ 56,25</p>
+                    <p class="textoCinza">Ou em 5x sem juros de 11,25</p>
+                    <div class="cardBotoes">
+                        <button class="botaoCard btn-VerMais">
+                            <a href="">Ver Mais</a>
+                        </button>
+                        <button class="botaoCard btn-AdicionarCarrinho">
+                            <a href="">Adicionar ao Carrinho</a>
+                        </button>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src={{--"/storage/images/{{ $item->imagem }}" --}} height="360" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card__nome">{{--{{ $item->nome }} --}}</h5>
-                                <p class="card-text">Descrição: {{--{{ $item->descricao }} --}}</p>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text card__preco">R$ {{--{{ $item->valor }} --}}</p>
-                                <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="cardProduto">
+                <div class="cardImg">
+                    <img src="" alt="Nome do Produto">
+                </div>
+                <div class="cardInfo">
+                    <h2 class="nomeProduto">Emborrachado fundo e acabamento 20kg</h2>
+                    <p class="textoCinza--tachado">R$ 268,90</p>
+                    <p class="precoProduto">R$ 242,01</p>
+                    <p class="textoCinza">Ou em 10x sem juros de 24,20</p>
+                    <div class="cardBotoes">
+                        <button class="botaoCard btn-VerMais">
+                            <a href="">Ver Mais</a>
+                        </button>
+                        <button class="botaoCard btn-AdicionarCarrinho">
+                            <a href="">Adicionar ao Carrinho</a>
+                        </button>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src={{--"/storage/images/{{ $item->imagem }}" --}} height="360" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card__nome">{{--{{ $item->nome }} --}}</h5>
-                                <p class="card-text">Descrição: {{--{{ $item->descricao }} --}}</p>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text card__preco">R$ {{--{{ $item->valor }} --}}</p>
-                                <a href="" class="botaoVoltar mt-1 p-2">Adicionar ao Carrinho</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="cardProduto">
+                <div class="cardImg">
+                    <img src="" alt="Nome do Produto">
+                </div>
+                <div class="cardInfo">
+                    <h2 class="nomeProduto">Engate Passe Livre</h2>
+                    <p class="textoCinza--tachado">R$ 12,90</p>
+                    <p class="precoProduto">R$ 9,99</p>
+                    <p class="textoCinza">Ou em 2x sem juros de 4,99 </p>
+                    <div class="cardBotoes">
+                        <button class="botaoCard btn-VerMais">
+                            <a href="">Ver Mais</a>
+                        </button>
+                        <button class="botaoCard btn-AdicionarCarrinho">
+                            <a href="">Adicionar ao Carrinho</a>
+                        </button>
                     </div>
-                    
-                    
-                {{-- @endforeach --}}
-
+                </div>
+            </div>
+            <div class="cardProduto">
+                <div class="cardImg">
+                    <img src="" alt="Nome do Produto">
+                </div>
+                <div class="cardInfo">
+                    <h2 class="nomeProduto">Tinta piso Ciapiso 16L</h2>
+                    <p class="textoCinza--tachado">R$ 355,99</p>
+                    <p class="precoProduto">R$ 304,99</p>
+                    <p class="textoCinza">Ou em 6x sem juros de R$ 50,84</p>
+                    <div class="cardBotoes">
+                        <button class="botaoCard btn-VerMais">
+                            <a href="">Ver Mais</a>
+                        </button>
+                        <button class="botaoCard btn-AdicionarCarrinho">
+                            <a href="">Adicionar ao Carrinho</a>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-
-
     </section>
 
     {{-- CONHEÇA NOSSA HISTÓRIA --}}
@@ -189,7 +247,8 @@
         <section class="boxHistoria">
             <div class="boxHistoria__textArea">
                 <h2>Conheça nossa história!</h2>
-                <p>Maior distribuidora de tintas Ciacollor da região Centro-oeste, desde 2022 atendendo Cuiabá, Várzea Grande e região, agora On-line.</p>
+                <p>Maior distribuidora de tintas Ciacollor da região Centro-oeste, desde 2022 atendendo Cuiabá, Várzea
+                    Grande e região, agora On-line.</p>
             </div>
             <div class="boxHistoria__imageArea">
                 <img src="assets/img/carousel/img1.jpg" alt="Imagem 1" class="boxHistoria__imageBox">
@@ -197,5 +256,4 @@
             </div>
         </section>
     </div>
-    
 @endsection

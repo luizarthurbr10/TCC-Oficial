@@ -18,7 +18,7 @@
             <h2 class="titulo">Endereços Cadastrados</h2>
             <p class="mensagem">Nenhum endereço cadastrado...</p>
             <h3 class="subtitulo">Cadastre um Novo Endereço</h3>
-            <form>
+            <form class="formEndereco">
                 <input type="text" class="campo-texto" placeholder="Dê um nome a este endereço">
                 <select class="campo-select">
                     <option value="">Estado</option>
