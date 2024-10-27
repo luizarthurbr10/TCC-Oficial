@@ -16,26 +16,34 @@
                     </button>
                 </form>
             </div>
+
             <div class="col-12 col-md-4 p-3 d-flex justify-content-around">
                 <a href="/" class="nav__link bordas link-light p-3">Home</a>
-                <a href="{{ route('catalogo') }}" class="nav__link bordas link-light p-3">Catálogo</a>
+                <a href="{{ route('catalogo') }}" class="nav__link link-light p-3">Catálogo</a>
                 @guest
-                    <a href="login" class="nav__link bordas link-light p-3">Entre ou Cadastre-se</a>
+                    <a href="login" class="nav__link link-light p-3">Entre ou Cadastre-se</a>
                 @endguest
                 @auth
                     <span class="nav__link bordas link-light p-3">Bem-Vindo(a) - {{ Auth::user()->name }}!</span>
-                    <form class="p-3" action="logout" method="post">
-                        @csrf
-                            <a href="#" class="nav__link bordas link-light p-3"
-                                onclick="event.preventDefault();this.closest('form').submit();">Sair</a>
-                    </form>
+
                 @endauth
             </div>
-            <div class="col-12 col-md-1 text-center text-md-right p-3">
-                <a href="{{ route('carrinho') }}">
-                    <img src="assets/img/icons/carrinho-de-compras.png" class="carrinho" alt="">
+
+            <div class="col-12 col-md-1 text-center text-md-right">
+                <a href="{{ session('sum_qtd') ? '\carrinho' : '#' }}" class="nav-link">
+                    @if (!isset($cart))
+                        <div class="row">
+                            <div class="d-flex align-items-center">
+                                <img src="/assets/img/icons/carrinho-de-compras.png" height="50" alt="">
+                                <span class="numeroCarrinho">
+                                    {{ session('sum_qtd') == 0 ? '' : session('sum_qtd') }}
+                                </span>
+                            </div>
+                        </div>
+                    @endif
                 </a>
             </div>
+
         </div>
 
         <div class="navSecundario alinhamentoDiv">
@@ -58,6 +66,13 @@
                     <a href="" class="nav__link--SemBorda link-light">Ferragens</a>
                     <a href="" class="nav__link--SemBorda link-light">Tintas</a>
                     <a href="" class="nav__link--SemBorda link-light">Iluminação</a>
+                    @auth
+                        <form class="mt-1" action="logout" method="post">
+                            @csrf
+                            <a href="#" class="nav__link--SemBorda link-light"
+                                onclick="event.preventDefault();this.closest('form').submit();">Sair</a>
+                        </form>
+                    @endauth
                 </div>
             </div>
         </div>

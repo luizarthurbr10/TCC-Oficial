@@ -46,11 +46,6 @@ nav {
     max-width: 100%;
 }
 
-.carrinho {
-    width: 60px;
-    max-width: 100%;
-}
-
 .navPrincipal{
     display: flex;
     justify-content: space-between;
@@ -60,6 +55,11 @@ nav {
 .gambiarra01{
     margin-right: 4%;
     font-size: 20px;
+}
+
+.numeroCarrinho{
+    color: white;
+
 }
 
 /* ESTUDAR COMO FUNCIONA!!! */

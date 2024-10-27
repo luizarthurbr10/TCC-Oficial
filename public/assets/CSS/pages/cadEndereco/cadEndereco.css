@@ -1,0 +1,80 @@
+.containerCadEndereco {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: left;
+    margin-top: 3%;
+    font-family: Cambria;
+}
+
+.titulo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.mensagem {
+    font-size: 0.9rem;
+    color: #888888;
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo-texto,
+.campo-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+}
+
+.campo-texto:focus,
+.campo-select:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+
+.botao {
+    padding: 10px;
+    font-size: 1rem;
+    color: black;
+    background-color: #fbbc05;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #333333;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+
+    .titulo,
+    .subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .mensagem {
+        font-size: 0.8rem;
+    }
+}
