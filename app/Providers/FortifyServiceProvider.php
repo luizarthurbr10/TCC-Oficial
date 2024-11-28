@@ -51,7 +51,7 @@ class FortifyServiceProvider extends ServiceProvider
 
         Fortify::authenticateUsing(function (Request $request) {
             $user = User::where(Fortify::username(), $request->input(Fortify::username()))->first();
-   
+            
             if ($user && Hash::check($request->password, $user->password)) {
                 session(['nivel' => $user->nivel]); // Armazena o campo 'role' na sessão
                 return $user; // Retorna o usuário para autenticação

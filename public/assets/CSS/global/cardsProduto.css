@@ -15,6 +15,10 @@
     flex: 1 1 calc(25% - 20px);
     /* Ocupa 25% da largura do contêiner menos o espaço do gap */
     max-width: 280px;
+    display: flex;
+    flex-direction: column; /* Garante que os elementos dentro estejam empilhados */
+    border: 1px solid #ccc;
+    padding: 16px;
 }
 
 .cardProduto:hover {
@@ -28,7 +32,10 @@
 }
 
 .cardInfo {
-    padding: 16px;
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    justify-content: space-between; /* Espaço entre o conteúdo e a parte inferior */
+    flex-grow: 1; /* Faz esta seção ocupar o espaço restante do contêiner */
 }
 
 .nomeProduto {
@@ -50,9 +57,9 @@
 }
 
 .cardBotoes {
+    margin-top: auto; /* Move os botões para o final */
     display: flex;
-    gap: 10px;
-    justify-content: center;
+    gap: 8px; /* Espaçamento entre os botões */
 }
 
 .botaoCard {

@@ -11,18 +11,19 @@
             <a href="{{route('homeAdministrador')}}">Voltar</a>
         </button>
     </div>
-    <form class="mt-2" action="categoria/create" method="POST">
+    <form class="mt-2" method="POST" action= "{{ isset($categoriaalterar) ? '\update/' .$categoriaalterar->idCategoria : 'categoria/create' }}">
     @csrf
+    @if (isset($categoriaalterar))
+                @method('PUT')
+            @endif
         <div class="mb-3">
-            {{-- <label class="form-label">Categoria:</label> --}}
-            <input placeholder="Nome da Categoria" name="nomeCategoria" type="text" class="form-control">
+            <input placeholder="Nome da Categoria" name="nomeCategoria" type="text" class="form-control" value="{{ old('nomeCategoria', isset($categoriaalterar->nomeCategoria) ? $categoriaalterar->nomeCategoria : '') }}">
         </div>
         <div class="mb-3">
-            {{-- <label class="form-label">Descrição:</label> --}}
-            <input placeholder="Descrição da Categoria" name="descricaoCategoria" type="text" class="form-control">
+            <input placeholder="Descrição da Categoria" name="descricaoCategoria" type="text" class="form-control" value="{{ old('descricaoCategoria', isset($categoriaalterar->descricaoCategoria) ? $categoriaalterar->descricaoCategoria : '') }}">
         </div>
         <button type="submit" class="botaoCadastrar mt-2">
-            {{ isset($categoria) ? 'Cadastrar': 'Alterar' }}
+            {{ isset($categoriaalterar) ? 'Alterar' : 'Cadastrar'}}
         </button>
     </form>
 
@@ -45,8 +46,8 @@
                     <td>{{ $item->nomeCategoria }}</td>
                     <td>{{ $item->descricaoCategoria }}</td>
                     <td>
-                        <a href="alterar/{{ $item->idCategoria}}" class="btn btn-warning">Alterar</a>
-                        <a href="deletar/{{ $item->idCategoria}}" class="btn btn-danger">Deletar</a>
+                        <a href="\alterar/{{ $item->idCategoria}}" class="btn btn-warning">Alterar</a>
+                        <a href="\deletarCategoria/{{ $item->idCategoria}}" class="btn btn-danger">Deletar</a>
                     </td>
                 </tr>
             @endforeach

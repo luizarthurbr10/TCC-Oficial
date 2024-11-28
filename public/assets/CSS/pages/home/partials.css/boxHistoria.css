@@ -3,32 +3,31 @@
     flex-wrap: wrap; /* Permite que os itens se reorganizem em telas menores */
     justify-content: space-around;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     background-image: url('background-pattern.png');
     background-size: cover;
     background-color: rgb(11, 55, 102);
-    margin: 20px;
     width: 90%;
     box-sizing: border-box; /* Garante que padding não afete a largura */
 }
 
 .boxHistoria__textArea {
     color: white;
-    max-width: 400px;
+    max-width: 750px;
     margin-bottom: 20px; /* Adicionado para espaçamento em telas menores */
     text-align: center; /* Centraliza o texto em telas pequenas */
 }
 
 .boxHistoria__textArea h2 {
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 10px;
-    text-align: justify;
+    text-align: left;
 }
 
 .boxHistoria__textArea p {
-    font-size: 18px;
+    font-size: 28px;
     line-height: 1.5;
-    text-align: justify;
+    text-align: left;
 }
 
 .boxHistoria__imageArea {

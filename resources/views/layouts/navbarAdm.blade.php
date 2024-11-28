@@ -3,7 +3,7 @@
     <nav>
         <div class="navPrincipal row text-center">
             <div class="col-12 col-md-2 text-center text-md-left">
-                <a href="{{route('homeAdministrador')}}">
+                <a href="">
                     <img src="assets/img/logo/logo.png" class="logo" alt="">
                 </a>
             </div>
@@ -25,8 +25,8 @@
                     <a href="{{ route('consultar') }}" class="nav__link--SemBorda link-light">Consultar Produtos</a>
                     <form class="mt-1" action="logout" method="post">
                         @csrf
-                            <a href="#" class="nav__link--SemBorda link-light"
-                                onclick="event.preventDefault();this.closest('form').submit();">Sair</a>
+                        <a href="#" class="nav__link--SemBorda link-light"
+                            onclick="event.preventDefault();this.closest('form').submit();">Sair</a>
                     </form>
                 </div>
             </div>

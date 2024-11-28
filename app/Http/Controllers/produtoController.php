@@ -27,6 +27,27 @@ class produtoController extends Controller
         $request->file('imagem')->storeAs('public/images', $nomeimg);
 
         $produto->save();
+        return redirect()->route('consultar')->with('success', 'Produto Cadastrado!');
+    }
+
+    public function updateProduto(Request $request, $id)
+    {
+        $produto = Produto::find($id);
+
+        $produto->nome = $request->nome;
+        $produto->descricao = $request->descricao;
+        $produto->cor = $request->cor;
+        $produto->valor = $request->valor;
+        $produto->quantidade = $request->quantidade;
+        $produto->fornecedor = $request->fornecedor;
+        $produto->categoria = $request->categoria;
+
+        $nomeimg = $produto->imagem = time() . "." . $request->imagem->extension();
+        $request->file('imagem')->storeAs('public/images', $nomeimg);
+
+        $produto->save();
+        // return back();
+        return redirect()->route('con')->with('success', 'Produto Cadastrado!');
 
     }
 
@@ -34,10 +55,11 @@ class produtoController extends Controller
     public function consultar()
     {
         // $produto = Produto::all();
-        $produto = Produto::select('produtos.*', 'categorias.nomeCategoria as categoria')
+        $produto = Produto::select('produtos.*', 'categorias.nomeCategoria as categoria', 'fornecedores.nomeFornecedor as fornecedor')
             ->join('categorias', 'produtos.categoria', '=', 'categorias.idCategoria')
+            ->join('fornecedores', 'produtos.fornecedor', '=', 'fornecedores.idFornecedor')
             ->get();
-        return view('pages.conproduto', ['produto' => $produto]);
+        return view('pages.conProduto', ['produto' => $produto]);
     }
 
     public function catalogo()
@@ -48,11 +70,9 @@ class produtoController extends Controller
     }
 
     // Função para Deletar Produto
-    public function deletar($id)
+    public function deletarProduto($id)
     {
-
         $produto = Produto::find($id);
-
         $produto->delete();
         return back();
     }
@@ -62,15 +82,15 @@ class produtoController extends Controller
     {
         $categoria = Categoria::all();
         $fornecedor = Fornecedor::all();
-        $produto = Produto::find($id);
+        //$produto = Produto::find($id);
 
-        $produto = Produto::select('produtos.*', 'categorias.nomeCategoria as categoria', 'fornecedores.nomeFornecedor as fornecedor')
+        $produto = Produto::select('produtos.id', 'produtos.nome','produtos.fornecedor', 'produtos.categoria',  'produtos.valor', 'produtos.descricao', 'produtos.cor', 'produtos.quantidade', 'categorias.idCategoria as categoria', 'fornecedores.idFornecedor as fornecedor')
             ->join('categorias', 'produtos.categoria', '=', 'categorias.idCategoria')
             ->join('fornecedores', 'produtos.fornecedor', '=', 'fornecedores.idFornecedor')
-            ->join('produtos', 'produtos.nome', '=', 'produtos.id')
-            ->get();
+            ->where('produtos.id', $id)
+            ->first(); // Para obter um único registro
 
-        return view('pages.cadProduto', ['produto' => $produto]);
+        return view('pages.cadProduto', ['produto' => $produto, 'categoria'=>$categoria, 'fornecedor'=>$fornecedor]);
     }
 
     public function home()
@@ -126,7 +146,6 @@ class produtoController extends Controller
         Session::put('sum_qtd', $sum_qtd);
         Session::put('sum_valor', $sum_valor);
 
-        //return view('pages.cart', compact('carrinho', 'sum_qtd', 'sum_valor'));
         return back();
     }
 
@@ -211,4 +230,5 @@ class produtoController extends Controller
 
         return back();
     }
+
 }

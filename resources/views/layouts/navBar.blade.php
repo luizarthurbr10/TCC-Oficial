@@ -24,8 +24,17 @@
                     <a href="login" class="nav__link bordas link-light p-3">Entre ou Cadastre-se</a>
                 @endguest
                 @auth
-                    <span class="nav__link bordas link-light p-3">Bem-Vindo(a) - {{ Auth::user()->name }}!</span>
-
+                    @if (session('nivel') === 'admin')
+                        <a class="linkAdm bordas link-light p-3" title="Ir à Página Inicial do Administrador"
+                            href="{{ route('homeAdministrador') }}">
+                            <span class="">Bem-Vindo(a) - {{ Auth::user()->name }}!</span>
+                        </a>
+                    @endif
+                    @if (session('nivel') === 'user')
+                        <a href="" class="nav__link bordas link-light p-3">
+                            <span class="">Bem-Vindo(a) - {{ Auth::user()->name }}!</span>
+                        </a>
+                    @endif
                 @endauth
             </div>
 

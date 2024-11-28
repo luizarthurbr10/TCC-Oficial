@@ -5,8 +5,6 @@
     $footer = 0;
 @endphp
 
-
-
 @section('conteudo')
     <style>
         body {
@@ -18,9 +16,16 @@
             <h2 class="titulo">Endereços Cadastrados</h2>
             <p class="mensagem">Nenhum endereço cadastrado...</p>
             <h3 class="subtitulo">Cadastre um Novo Endereço</h3>
-            <form class="formEndereco">
-                <input type="text" class="campo-texto" placeholder="Dê um nome a este endereço">
-                <select class="campo-select">
+            <form class="formEndereco" method="POST"
+                action="{{ isset($endereco) ? '\update/' . $endereco->idEndereco : 'endereco/create' }}">
+                @csrf
+                @if (isset($endereco))
+                    @method('PUT')
+                @endif
+                <input name="nomeEndereco" type="text" class="campo-texto" placeholder="Dê um nome a este endereço"
+                    value="{{ old('nomeEndereco', isset($endereco->nomeEndereco) ? $endereco->nomeEndereco : '') }}">
+                <select name="estado" class="campo-select"
+                    value="{{ old('estado', isset($endereco->estado) ? $endereco->estado : '') }}">
                     <option value="">Estado</option>
                     <option value="AC">Acre (AC)</option>
                     <option value="AL">Alagoas (AL)</option>
@@ -50,11 +55,18 @@
                     <option value="SE">Sergipe (SE)</option>
                     <option value="TO">Tocantins (TO)</option>
                 </select>
-                <input type="text" class="campo-texto" placeholder="Cidade">
-                <input type="text" class="campo-texto" placeholder="CEP">
-                <input type="text" class="campo-texto" placeholder="Bairro ou logradouro">
-                <input type="text" class="campo-texto" placeholder="Complemento e referência">
-                <button type="submit" class="botao">Cadastrar</button>
+                <input type="text" class="campo-texto" placeholder="Cidade" name="cidade"
+                    value="{{ old('cidade', isset($endereco->cidade) ? $endereco->cidade : '') }}">
+                <input type="text" class="campo-texto" placeholder="CEP" name="cep"
+                    value="{{ old('cep', isset($endereco->cep) ? $endereco->cep : '') }}">
+                <input type="text" class="campo-texto" placeholder="Bairro ou logradouro" name="bairro"
+                    value="{{ old('bairro', isset($endereco->bairro) ? $endereco->bairro : '') }}">
+                <input type="text" class="campo-texto" placeholder="Rua" name="rua"
+                    value="{{ old('rua', isset($endereco->rua) ? $endereco->rua : '') }}">
+                <input type="text" class="campo-texto" placeholder="Complemento e referência" name="complemento"
+                    value="{{ old('complemento', isset($endereco->complemento) ? $endereco->complemento : '') }}">
+                <button type="submit" class="botao"
+                    {{ old('Cadastrar', isset($endereco->idEndereco) ? 'Alterar' : 'Cadastrar') }}>Cadastrar</button>
             </form>
         </div>
     </div>

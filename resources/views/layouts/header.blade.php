@@ -1,3 +1,3 @@
 <div>
-    <!-- Simplicity is the consequence of refined emotions. - Jean D'Alembert -->
+    <!-- Very little is needed to make a happy life. - Marcus Aurelius -->
 </div>

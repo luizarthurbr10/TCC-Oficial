@@ -1,7 +1,7 @@
 .containerCarrinho {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     border: 1px solid #ccc;
     padding: 10px;
     max-width: 90%;
@@ -9,7 +9,9 @@
     margin-bottom: 20px;
 }
 
-.product-info, .order-info, .store-info {
+.product-info,
+.order-info,
+.store-info {
     padding: 10px;
     border-right: 1px solid #ccc;
 }
@@ -31,8 +33,19 @@
     flex: 1;
     min-width: 200px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    margin-left: 5px;
+    /* border-top: solid black 1px;
+    border-bottom: solid black 1px; */
+}
+
+.tituloDescricao {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.descricao {
+    font-size: 15px;
 }
 
 .store-info {
@@ -40,7 +53,7 @@
     min-width: 200px;
 }
 
-.actions {
+.actionsCarrinho {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +61,41 @@
     justify-content: center;
 }
 
-.textoCinza{
+.actions01 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-evenly;
+    margin-left: 12px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.numero {
+    margin-top: 18px;
+}
+
+.actions02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    margin-left: 11px;
+    width: 100%;
+}
+
+.botaoQuantidade {
+    border: solid 1px black;
+}
+
+.botaoQuantidade label {
+    padding: 1px 12px 1px 12px;
+}
+
+
+
+.textoCinza {
     color: #a6a6a6;
 }
 
@@ -64,7 +111,6 @@
     padding: 10px 20px;
     font-size: 16px;
     width: 100%;
-    margin-left: 10px;
     border-radius: 5px;
 }
 
@@ -74,37 +120,42 @@
     width: 20px;
 }
 
-.botaoVerProduto{
+.botaoVerProduto {
     background-color: #fbbc05;
 }
 
-.botaoVerProduto a{
+.botaoVerProduto label, .botaoExcluir label, .botaoQuantidade label:hover {
+    cursor: pointer;
+
+}
+
+.botaoVerProduto a {
     color: black;
 }
 
-.botaoExcluir{
+.botaoExcluir {
     background-color: #003366;
     color: white;
 }
 
 
-.textoBotao{
+.textoBotao {
     margin-left: 20px;
     text-decoration: none;
 }
 
-.textoBotaoBranco{
+.textoBotaoBranco {
     color: white;
     margin-left: 20px;
 
 }
 
-.valorTotal{
+.valorTotal {
     font-weight: bold;
     font-size: 25px;
 }
 
-.numero{
+.numero {
     margin-left: 5px;
 }
 
@@ -115,7 +166,9 @@
         flex-direction: column;
     }
 
-    .product-info, .order-info, .store-info {
+    .product-info,
+    .order-info,
+    .store-info {
         border-right: none;
         border-bottom: 1px solid #ccc;
     }
@@ -153,6 +206,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
     flex: 1;
     margin-left: 20px;
@@ -169,7 +223,7 @@
     cursor: pointer;
     text-align: center;
     width: 70%;
-    
+
 }
 
 .finalizar {
@@ -189,7 +243,7 @@
     .container {
         flex-direction: column;
     }
-    
+
     .info {
         padding-right: 0;
         margin-bottom: 20px;

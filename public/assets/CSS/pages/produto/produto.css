@@ -72,14 +72,20 @@
 .buy-button {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
     background-color: #ffa60093;
-    color: black;
     font-size: 16px;
     cursor: pointer;
     border: none;
     border-radius: 0px;
     text-decoration: none;
+    margin-top: 165px;
+    text-align: center;
+
+}
+
+.buy-button a{
+    text-decoration: none;
+    color: black;
 }
 
 .pickup-info p {
@@ -104,9 +110,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 17.3%;
-    padding: 20px;
-    max-width: 1200px;
+    width: 100%;
     
 }
 
@@ -118,6 +122,11 @@
 .accordion-header{
     background: #f4f4f4;
     
+}
+
+.descricao{
+    width: 100%;
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {

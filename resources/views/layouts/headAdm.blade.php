@@ -11,6 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="glider.css">
     <link rel="stylesheet" href="\assets/CSS/global/globalAdm.css">
-
+    @livewireScripts
 </head>
 

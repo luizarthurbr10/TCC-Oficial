@@ -18,6 +18,18 @@ class FornecedorController extends Controller
 
         return back();
     }
+
+    public function updateFornecedor(Request $request, $idFornecedor){
+
+        $fornecedor = Fornecedor::find($idFornecedor);
+
+        $fornecedor->nomeFornecedor = $request->nomeFornecedor;
+        $fornecedor->descricaoFornecedor = $request->descricaoFornecedor;
+
+        $fornecedor->save();
+
+        return back();
+    }
     
     // Função para Consultar 
     public function consultar(){
@@ -26,18 +38,19 @@ class FornecedorController extends Controller
     }
 
     // Função para Deletar 
-    public function deletar($idFornecedor){
-
+    public function deletarFornecedor($idFornecedor){
         $fornecedor = Fornecedor::find($idFornecedor);
-
         $fornecedor->delete();
         return back();
     }
 
     // Função para Alterar 
-    public function alterar($idFornecedor){
+    public function alterarfornecedor($idFornecedor){
 
-        $fornecedor = Fornecedor::find($idFornecedor);
-        return view('pages.cadFornecedor', ['fornecedor' => $fornecedor]);
+        $fornecedoralterar  = Fornecedor::find($idFornecedor);
+
+        $fornecedor = Fornecedor::all();
+
+        return view('pages.cadFornecedor', ['fornecedor' => $fornecedor,'fornecedoralterar'=>$fornecedoralterar]);
     }
 }

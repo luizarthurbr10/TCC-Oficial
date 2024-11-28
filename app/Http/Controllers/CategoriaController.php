@@ -21,6 +21,17 @@ class CategoriaController extends Controller
         return back();
     }   
 
+    public function update(Request $request,$idCategoria){
+        $categoria = Categoria::find($idCategoria);
+
+        $categoria->nomeCategoria = $request->nomeCategoria;
+        $categoria->descricaoCategoria = $request->descricaoCategoria;
+
+        $categoria->save();
+
+        return back();
+    }   
+
     // Função para Consultar Categoria
     public function consultar(){
         $categoria = Categoria::all();
@@ -33,10 +44,8 @@ class CategoriaController extends Controller
     }
 
     // Função para Deletar Categoria
-    public function deletar($idCategoria){
-
+    public function deletarCategoria($idCategoria){
         $categoria = Categoria::find($idCategoria);
-
         $categoria->delete();
         return back();
     }
@@ -44,7 +53,9 @@ class CategoriaController extends Controller
     // Função para Alterar Categoria
     public function alterar($idCategoria){
 
-        $categoria = Categoria::find($idCategoria);
-        return view('pages.cadCategoria', ['categoria' => $categoria]);
+        $categoria = Categoria::all();
+        $categoriaalterar  = Categoria::find($idCategoria);
+
+        return view('pages.cadCategoria', ['categoria' => $categoria, 'categoriaalterar'=>$categoriaalterar]);
     }
 }
